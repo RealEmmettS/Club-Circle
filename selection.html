@@ -354,10 +354,10 @@
             var result = await makeGetRequest(url);
             sleep(1500);
             console.log(result.result);
-            display.innerHTML = result.result;
+            display.innerHTML = result.result.replace("\"", "");
 
             sleep(3000);
-            let clubName = result.result.substring(0, result.result.indexOf(":")).replace("!", "");
+            let clubName = result.result.substring(0, result.result.indexOf(":")).replace("!", "").replace("\"", "");
             console.log(clubName);
             console.log(image)
             generateClubLogo(image, clubName);
