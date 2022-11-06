@@ -436,7 +436,7 @@
 
         if (college_prompt != "" && chosen1 == false){
             chosen1 = true;
-            generateClubs(display1, college_prompt.replace(", ", ""));
+            generateClubs(display1, college_prompt.replace(", ", "").replace("\"", ""));    
         }else if (hobby1_prompt != "" && chosen2 == false){
             chosen2 = true;
             generateClubs(display1, hobby1_prompt);
@@ -447,7 +447,7 @@
 
         if (college_prompt != "" && chosen1 == false){
             chosen1 = true;
-            generateClubs(display2, college_prompt.replace(", ", ""));
+            generateClubs(display2, college_prompt.replace(", ", "").replace("\"", ""));
         }else if (hobby1_prompt != "" && chosen2 == false){
             chosen2 = true;
             generateClubs(display2, hobby1_prompt);
@@ -458,7 +458,7 @@
 
         if (college_prompt != "" && chosen1 == false){
             chosen1 = true;
-            generateClubs(display3, college_prompt.replace(", ", ""));
+            generateClubs(display3, college_prompt.replace(", ", "").replace("\"", ""));
         }else if (hobby1_prompt != "" && chosen2 == false){
             chosen2 = true;
             generateClubs(display3, hobby1_prompt);
