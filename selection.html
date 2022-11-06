@@ -6,21 +6,327 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <title>ClubCircle</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter&amp;display=swap">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
     <link rel="stylesheet" href="/assets/css/styles.min.css">
 </head>
 
 <body style="background: rgb(0,0,0);height: auto;width: 100vw;min-height: 100vh;">
-    <div class="d-flex flex-column justify-content-center align-items-center justify-content-md-center align-items-md-center" style="width: 100vw;background: url(&quot;/assets/img/3.png&quot;) left / cover repeat;padding: 20px;padding-top: 50px;padding-bottom: 50px;min-height: 100vh;height: auto;">
+    <div class="d-flex flex-column justify-content-center align-items-center justify-content-md-center align-items-md-center" style="width: 100vw;background: url(&quot;/assets/img/3.png&quot;) left / cover repeat;padding: 20px;padding-top: 50px;padding-bottom: 50px;min-height: 100vh;height: auto;border-bottom-style: solid;border-bottom-color: rgb(255,255,255);">
         <form class="d-flex d-md-flex flex-column justify-content-center align-items-center justify-content-md-center align-items-md-center" style="width: 80%;height: fit-content;padding: 15px;background: linear-gradient(171deg, rgba(214,214,214,0.2), rgba(180,180,180,0.27) 100%), rgba(74,74,74,0.35);border-color: white;border-radius: 20px;font-family: 'Sandro Grottesco';font-size: 20px;color: rgb(255,255,255);padding-top: 30px;padding-bottom: 30px;min-height: 80%;padding-right: 20px;padding-left: 20px;">
             <h1 style="text-align: center;">What's your name?</h1><input class="form-control" type="text" data-bss-disabled-mobile="true" data-bss-hover-animate="pulse" style="font-family: 'Sandro Grottesco';font-weight: bold;font-size: 15px;background: linear-gradient(171deg, rgba(255,255,255,0.07), rgba(207,207,207,0.22) 100%), rgba(255,255,255,0.2);padding-top: 12px;padding-right: 24px;padding-bottom: 12px;padding-left: 24px;border-radius: 20px;height: 50px;margin-bottom: 40px;border-style: none;border-color: white;color: rgb(255,255,255);" href="/selection.html">
             <h1 style="text-align: center;">What college are you in?</h1><!-- Start: College Selection Buttons -->
-            <div class="d-flex d-md-flex flex-row justify-content-center align-items-center flex-wrap justify-content-md-center align-items-md-center" style="width: 100%;margin-bottom: 40px;"><button class="btn btn-primary" data-bss-disabled-mobile="true" data-bss-hover-animate="pulse" style="font-family: 'Sandro Grottesco';font-weight: bold;font-size: 15px;background: linear-gradient(171deg, rgba(255,255,255,0.07), rgba(207,207,207,0.22) 100%), rgba(255,255,255,0.2);padding-top: 6px;padding-right: 12px;padding-bottom: 6px;padding-left: 12px;border-radius: 20px;margin: 5px;border-style: none;border-color: white;">IST</button><button class="btn btn-primary" data-bss-disabled-mobile="true" data-bss-hover-animate="pulse" id="col_eng" style="font-family: 'Sandro Grottesco';font-weight: bold;font-size: 15px;background: linear-gradient(171deg, rgba(255,255,255,0.07), rgba(207,207,207,0.22) 100%), rgba(255,255,255,0.2);padding-top: 6px;padding-right: 12px;padding-bottom: 6px;padding-left: 12px;border-radius: 20px;margin: 5px;border-style: none;border-color: white;">ENGINEERING</button><button class="btn btn-primary" data-bss-disabled-mobile="true" data-bss-hover-animate="pulse" style="font-family: 'Sandro Grottesco';font-weight: bold;font-size: 15px;background: linear-gradient(171deg, rgba(255,255,255,0.07), rgba(207,207,207,0.22) 100%), rgba(255,255,255,0.2);padding-top: 6px;padding-right: 12px;padding-bottom: 6px;padding-left: 12px;border-radius: 20px;margin: 5px;border-style: none;border-color: white;">BUSINESS</button><button class="btn btn-primary" data-bss-disabled-mobile="true" data-bss-hover-animate="pulse" style="font-family: 'Sandro Grottesco';font-weight: bold;font-size: 15px;background: linear-gradient(171deg, rgba(255,255,255,0.07), rgba(207,207,207,0.22) 100%), rgba(255,255,255,0.2);padding-top: 6px;padding-right: 12px;padding-bottom: 6px;padding-left: 12px;border-radius: 20px;margin: 5px;border-style: none;border-color: white;">AGSCI</button><button class="btn btn-primary" data-bss-disabled-mobile="true" data-bss-hover-animate="pulse" style="font-family: 'Sandro Grottesco';font-weight: bold;font-size: 15px;background: linear-gradient(171deg, rgba(255,255,255,0.07), rgba(207,207,207,0.22) 100%), rgba(255,255,255,0.2);padding-top: 6px;padding-right: 12px;padding-bottom: 6px;padding-left: 12px;border-radius: 20px;margin: 5px;border-style: none;border-color: white;">ARTS &amp; ARCHITECTURE</button><button class="btn btn-primary" data-bss-disabled-mobile="true" data-bss-hover-animate="pulse" style="font-family: 'Sandro Grottesco';font-weight: bold;font-size: 15px;background: linear-gradient(171deg, rgba(255,255,255,0.07), rgba(207,207,207,0.22) 100%), rgba(255,255,255,0.2);padding-top: 6px;padding-right: 12px;padding-bottom: 6px;padding-left: 12px;border-radius: 20px;margin: 5px;border-style: none;border-color: white;">EDUCATION</button><button class="btn btn-primary" data-bss-disabled-mobile="true" data-bss-hover-animate="pulse" style="font-family: 'Sandro Grottesco';font-weight: bold;font-size: 15px;background: linear-gradient(171deg, rgba(255,255,255,0.07), rgba(207,207,207,0.22) 100%), rgba(255,255,255,0.2);padding-top: 6px;padding-right: 12px;padding-bottom: 6px;padding-left: 12px;border-radius: 20px;margin: 5px;border-style: none;border-color: white;">HHD</button><button class="btn btn-primary" data-bss-disabled-mobile="true" data-bss-hover-animate="pulse" style="font-family: 'Sandro Grottesco';font-weight: bold;font-size: 15px;background: linear-gradient(171deg, rgba(255,255,255,0.07), rgba(207,207,207,0.22) 100%), rgba(255,255,255,0.2);padding-top: 6px;padding-right: 12px;padding-bottom: 6px;padding-left: 12px;border-radius: 20px;margin: 5px;border-style: none;border-color: white;">COMMUNICATIONS</button><button class="btn btn-primary" data-bss-disabled-mobile="true" data-bss-hover-animate="pulse" style="font-family: 'Sandro Grottesco';font-weight: bold;font-size: 15px;background: linear-gradient(171deg, rgba(255,255,255,0.07), rgba(207,207,207,0.22) 100%), rgba(255,255,255,0.2);padding-top: 6px;padding-right: 12px;padding-bottom: 6px;padding-left: 12px;border-radius: 20px;margin: 5px;border-style: none;border-color: white;">EARTH &amp; MINERAL</button><button class="btn btn-primary" data-bss-disabled-mobile="true" data-bss-hover-animate="pulse" style="font-family: 'Sandro Grottesco';font-weight: bold;font-size: 15px;background: linear-gradient(171deg, rgba(255,255,255,0.07), rgba(207,207,207,0.22) 100%), rgba(255,255,255,0.2);padding-top: 6px;padding-right: 12px;padding-bottom: 6px;padding-left: 12px;border-radius: 20px;margin: 5px;border-style: none;border-color: white;">LIBERAL ARTS</button><button class="btn btn-primary" data-bss-disabled-mobile="true" data-bss-hover-animate="pulse" style="font-family: 'Sandro Grottesco';font-weight: bold;font-size: 15px;background: linear-gradient(171deg, rgba(255,255,255,0.07), rgba(207,207,207,0.22) 100%), rgba(255,255,255,0.2);padding-top: 6px;padding-right: 12px;padding-bottom: 6px;padding-left: 12px;border-radius: 20px;margin: 5px;border-style: none;border-color: white;">NURSING</button><button class="btn btn-primary" data-bss-disabled-mobile="true" data-bss-hover-animate="pulse" style="font-family: 'Sandro Grottesco';font-weight: bold;font-size: 15px;background: linear-gradient(171deg, rgba(255,255,255,0.07), rgba(207,207,207,0.22) 100%), rgba(255,255,255,0.2);padding-top: 6px;padding-right: 12px;padding-bottom: 6px;padding-left: 12px;border-radius: 20px;margin: 5px;border-style: none;border-color: white;">SCIENCE</button></div><!-- End: College Selection Buttons -->
-            <h1 style="text-align: center;">What are your hobbies?</h1><!-- Start: College Selection Buttons -->
-            <div class="d-flex d-md-flex flex-row justify-content-center align-items-center flex-wrap justify-content-md-center align-items-md-center" style="width: 100%;margin-bottom: 40px;"><button class="btn btn-primary" data-bss-disabled-mobile="true" data-bss-hover-animate="pulse" style="font-family: 'Sandro Grottesco';font-weight: bold;font-size: 15px;background: linear-gradient(171deg, rgba(255,255,255,0.07), rgba(207,207,207,0.22) 100%), rgba(255,255,255,0.2);padding-top: 6px;padding-right: 12px;padding-bottom: 6px;padding-left: 12px;border-radius: 20px;margin: 5px;border-style: none;">INVESTING</button><button class="btn btn-primary" data-bss-disabled-mobile="true" data-bss-hover-animate="pulse" style="font-family: 'Sandro Grottesco';font-weight: bold;font-size: 15px;background: linear-gradient(171deg, rgba(255,255,255,0.07), rgba(207,207,207,0.22) 100%), rgba(255,255,255,0.2);padding-top: 6px;padding-right: 12px;padding-bottom: 6px;padding-left: 12px;border-radius: 20px;margin: 5px;border-style: none;">CODING</button><button class="btn btn-primary" data-bss-disabled-mobile="true" data-bss-hover-animate="pulse" style="font-family: 'Sandro Grottesco';font-weight: bold;font-size: 15px;background: linear-gradient(171deg, rgba(255,255,255,0.07), rgba(207,207,207,0.22) 100%), rgba(255,255,255,0.2);padding-top: 6px;padding-right: 12px;padding-bottom: 6px;padding-left: 12px;border-radius: 20px;margin: 5px;border-style: none;">MUSIC</button><button class="btn btn-primary" data-bss-disabled-mobile="true" data-bss-hover-animate="pulse" style="font-family: 'Sandro Grottesco';font-weight: bold;font-size: 15px;background: linear-gradient(171deg, rgba(255,255,255,0.07), rgba(207,207,207,0.22) 100%), rgba(255,255,255,0.2);padding-top: 6px;padding-right: 12px;padding-bottom: 6px;padding-left: 12px;border-radius: 20px;margin: 5px;border-style: none;">COOKING</button><button class="btn btn-primary" data-bss-disabled-mobile="true" data-bss-hover-animate="pulse" style="font-family: 'Sandro Grottesco';font-weight: bold;font-size: 15px;background: linear-gradient(171deg, rgba(255,255,255,0.07), rgba(207,207,207,0.22) 100%), rgba(255,255,255,0.2);padding-top: 6px;padding-right: 12px;padding-bottom: 6px;padding-left: 12px;border-radius: 20px;margin: 5px;border-style: none;">MOVIES</button><button class="btn btn-primary" data-bss-disabled-mobile="true" data-bss-hover-animate="pulse" style="font-family: 'Sandro Grottesco';font-weight: bold;font-size: 15px;background: linear-gradient(171deg, rgba(255,255,255,0.07), rgba(207,207,207,0.22) 100%), rgba(255,255,255,0.2);padding-top: 6px;padding-right: 12px;padding-bottom: 6px;padding-left: 12px;border-radius: 20px;margin: 5px;border-style: none;">GAMING</button><button class="btn btn-primary" data-bss-disabled-mobile="true" data-bss-hover-animate="pulse" style="font-family: 'Sandro Grottesco';font-weight: bold;font-size: 15px;background: linear-gradient(171deg, rgba(255,255,255,0.07), rgba(207,207,207,0.22) 100%), rgba(255,255,255,0.2);padding-top: 6px;padding-right: 12px;padding-bottom: 6px;padding-left: 12px;border-radius: 20px;margin: 5px;border-style: none;">BOXING</button><button class="btn btn-primary" data-bss-disabled-mobile="true" data-bss-hover-animate="pulse" style="font-family: 'Sandro Grottesco';font-weight: bold;font-size: 15px;background: linear-gradient(171deg, rgba(255,255,255,0.07), rgba(207,207,207,0.22) 100%), rgba(255,255,255,0.2);padding-top: 6px;padding-right: 12px;padding-bottom: 6px;padding-left: 12px;border-radius: 20px;margin: 5px;border-style: none;">TENNIS</button><button class="btn btn-primary" data-bss-disabled-mobile="true" data-bss-hover-animate="pulse" style="font-family: 'Sandro Grottesco';font-weight: bold;font-size: 15px;background: linear-gradient(171deg, rgba(255,255,255,0.07), rgba(207,207,207,0.22) 100%), rgba(255,255,255,0.2);padding-top: 6px;padding-right: 12px;padding-bottom: 6px;padding-left: 12px;border-radius: 20px;margin: 5px;border-style: none;">HIKING</button><button class="btn btn-primary" data-bss-disabled-mobile="true" data-bss-hover-animate="pulse" style="font-family: 'Sandro Grottesco';font-weight: bold;font-size: 15px;background: linear-gradient(171deg, rgba(255,255,255,0.07), rgba(207,207,207,0.22) 100%), rgba(255,255,255,0.2);padding-top: 6px;padding-right: 12px;padding-bottom: 6px;padding-left: 12px;border-radius: 20px;margin: 5px;border-style: none;">HOCKEY</button><button class="btn btn-primary" data-bss-disabled-mobile="true" data-bss-hover-animate="pulse" style="font-family: 'Sandro Grottesco';font-weight: bold;font-size: 15px;background: linear-gradient(171deg, rgba(255,255,255,0.07), rgba(207,207,207,0.22) 100%), rgba(255,255,255,0.2);padding-top: 6px;padding-right: 12px;padding-bottom: 6px;padding-left: 12px;border-radius: 20px;margin: 5px;border-style: none;">WEIGHTLIFTING</button><button class="btn btn-primary" data-bss-disabled-mobile="true" data-bss-hover-animate="pulse" style="font-family: 'Sandro Grottesco';font-weight: bold;font-size: 15px;background: linear-gradient(171deg, rgba(255,255,255,0.07), rgba(207,207,207,0.22) 100%), rgba(255,255,255,0.2);padding-top: 6px;padding-right: 12px;padding-bottom: 6px;padding-left: 12px;border-radius: 20px;margin: 5px;border-style: none;">RACING</button></div><!-- End: College Selection Buttons -->
-            <h1 style="text-align: center;">What's your favorite color?</h1><input class="form-control form-control-color" type="color" style="border-style: none;background: linear-gradient(171deg, rgba(255,255,255,0.07), rgba(207,207,207,0.22) 100%), rgba(255,255,255,0.2);width: 50px;height: 50px;"><button class="btn btn-primary" id="submit" type="button" style="margin-top: 40px;background: linear-gradient(171deg, rgba(255,255,255,0.07), rgba(207,207,207,0.22) 100%), rgba(255,255,255,0.2);border-style: none;font-size: calc(1.3rem + 1.5vw);font-weight: bold;">SUBMIT</button>
+            <div class="d-flex d-md-flex flex-row justify-content-center align-items-center flex-wrap justify-content-md-center align-items-md-center" style="width: 100%;margin-bottom: 40px;"><button class="btn btn-primary" data-bss-disabled-mobile="true" data-bss-hover-animate="pulse" id="1" style="font-family: 'Sandro Grottesco';font-weight: bold;font-size: 15px;background: linear-gradient(171deg, rgba(255,255,255,0.07), rgba(207,207,207,0.22) 100%), rgba(255,255,255,0.2);padding-top: 6px;padding-right: 12px;padding-bottom: 6px;padding-left: 12px;border-radius: 20px;margin: 5px;border-style: none;border-color: white;" type="button" onclick="col_ist_func()">IST</button><button class="btn btn-primary" data-bss-disabled-mobile="true" data-bss-hover-animate="pulse" id="2" style="font-family: 'Sandro Grottesco';font-weight: bold;font-size: 15px;background: linear-gradient(171deg, rgba(255,255,255,0.07), rgba(207,207,207,0.22) 100%), rgba(255,255,255,0.2);padding-top: 6px;padding-right: 12px;padding-bottom: 6px;padding-left: 12px;border-radius: 20px;margin: 5px;border-style: none;border-color: white;" onclick="col_eng_func()" type="button">ENGINEERING</button><button class="btn btn-primary" data-bss-disabled-mobile="true" data-bss-hover-animate="pulse" id="3" style="font-family: 'Sandro Grottesco';font-weight: bold;font-size: 15px;background: linear-gradient(171deg, rgba(255,255,255,0.07), rgba(207,207,207,0.22) 100%), rgba(255,255,255,0.2);padding-top: 6px;padding-right: 12px;padding-bottom: 6px;padding-left: 12px;border-radius: 20px;margin: 5px;border-style: none;border-color: white;" type="button" onclick="col_bus_func()">BUSINESS</button><button class="btn btn-primary" data-bss-disabled-mobile="true" data-bss-hover-animate="pulse" id="4" style="font-family: 'Sandro Grottesco';font-weight: bold;font-size: 15px;background: linear-gradient(171deg, rgba(255,255,255,0.07), rgba(207,207,207,0.22) 100%), rgba(255,255,255,0.2);padding-top: 6px;padding-right: 12px;padding-bottom: 6px;padding-left: 12px;border-radius: 20px;margin: 5px;border-style: none;border-color: white;" type="button" onclick="col_ags_func()">AGSCI</button><button class="btn btn-primary" data-bss-disabled-mobile="true" data-bss-hover-animate="pulse" id="5" style="font-family: 'Sandro Grottesco';font-weight: bold;font-size: 15px;background: linear-gradient(171deg, rgba(255,255,255,0.07), rgba(207,207,207,0.22) 100%), rgba(255,255,255,0.2);padding-top: 6px;padding-right: 12px;padding-bottom: 6px;padding-left: 12px;border-radius: 20px;margin: 5px;border-style: none;border-color: white;" type="button" onclick="col_aa_func()">ARTS &amp; ARCHITECTURE</button><button class="btn btn-primary" data-bss-disabled-mobile="true" data-bss-hover-animate="pulse" id="6" style="font-family: 'Sandro Grottesco';font-weight: bold;font-size: 15px;background: linear-gradient(171deg, rgba(255,255,255,0.07), rgba(207,207,207,0.22) 100%), rgba(255,255,255,0.2);padding-top: 6px;padding-right: 12px;padding-bottom: 6px;padding-left: 12px;border-radius: 20px;margin: 5px;border-style: none;border-color: white;" type="button" onclick="col_edu_func()">EDUCATION</button><button class="btn btn-primary" data-bss-disabled-mobile="true" data-bss-hover-animate="pulse" id="7" style="font-family: 'Sandro Grottesco';font-weight: bold;font-size: 15px;background: linear-gradient(171deg, rgba(255,255,255,0.07), rgba(207,207,207,0.22) 100%), rgba(255,255,255,0.2);padding-top: 6px;padding-right: 12px;padding-bottom: 6px;padding-left: 12px;border-radius: 20px;margin: 5px;border-style: none;border-color: white;" type="button" onclick="col_hdd_func()">HHD</button><button class="btn btn-primary" data-bss-disabled-mobile="true" data-bss-hover-animate="pulse" id="8" style="font-family: 'Sandro Grottesco';font-weight: bold;font-size: 15px;background: linear-gradient(171deg, rgba(255,255,255,0.07), rgba(207,207,207,0.22) 100%), rgba(255,255,255,0.2);padding-top: 6px;padding-right: 12px;padding-bottom: 6px;padding-left: 12px;border-radius: 20px;margin: 5px;border-style: none;border-color: white;" type="button" onclick="col_com_func()">COMMUNICATIONS</button><button class="btn btn-primary" data-bss-disabled-mobile="true" data-bss-hover-animate="pulse" id="9" style="font-family: 'Sandro Grottesco';font-weight: bold;font-size: 15px;background: linear-gradient(171deg, rgba(255,255,255,0.07), rgba(207,207,207,0.22) 100%), rgba(255,255,255,0.2);padding-top: 6px;padding-right: 12px;padding-bottom: 6px;padding-left: 12px;border-radius: 20px;margin: 5px;border-style: none;border-color: white;" type="button" onclick="col_ems_func()">EARTH &amp; MINERAL</button><button class="btn btn-primary" data-bss-disabled-mobile="true" data-bss-hover-animate="pulse" id="10" style="font-family: 'Sandro Grottesco';font-weight: bold;font-size: 15px;background: linear-gradient(171deg, rgba(255,255,255,0.07), rgba(207,207,207,0.22) 100%), rgba(255,255,255,0.2);padding-top: 6px;padding-right: 12px;padding-bottom: 6px;padding-left: 12px;border-radius: 20px;margin: 5px;border-style: none;border-color: white;" type="button" onclick="col_lib_func()">LIBERAL ARTS</button><button class="btn btn-primary" data-bss-disabled-mobile="true" data-bss-hover-animate="pulse" id="11" style="font-family: 'Sandro Grottesco';font-weight: bold;font-size: 15px;background: linear-gradient(171deg, rgba(255,255,255,0.07), rgba(207,207,207,0.22) 100%), rgba(255,255,255,0.2);padding-top: 6px;padding-right: 12px;padding-bottom: 6px;padding-left: 12px;border-radius: 20px;margin: 5px;border-style: none;border-color: white;" type="button" onclick="col_nur_func()">NURSING</button><button class="btn btn-primary" data-bss-disabled-mobile="true" data-bss-hover-animate="pulse" id="12" style="font-family: 'Sandro Grottesco';font-weight: bold;font-size: 15px;background: linear-gradient(171deg, rgba(255,255,255,0.07), rgba(207,207,207,0.22) 100%), rgba(255,255,255,0.2);padding-top: 6px;padding-right: 12px;padding-bottom: 6px;padding-left: 12px;border-radius: 20px;margin: 5px;border-style: none;border-color: white;" type="button" onclick="col_sci_func()">SCIENCE</button></div><!-- End: College Selection Buttons -->
+            <h1 style="text-align: center;">What are your hobbies?</h1><!-- Start: Hobby Selection Buttons -->
+            <div class="d-flex d-md-flex flex-row justify-content-center align-items-center flex-wrap justify-content-md-center align-items-md-center" style="width: 100%;margin-bottom: 40px;"><button class="btn btn-primary" data-bss-disabled-mobile="true" data-bss-hover-animate="pulse" id="13" style="font-family: 'Sandro Grottesco';font-weight: bold;font-size: 15px;background: linear-gradient(171deg, rgba(255,255,255,0.07), rgba(207,207,207,0.22) 100%), rgba(255,255,255,0.2);padding-top: 6px;padding-right: 12px;padding-bottom: 6px;padding-left: 12px;border-radius: 20px;margin: 5px;border-style: none;" type="button" onclick="hob_inv_func()">INVESTING</button><button class="btn btn-primary" data-bss-disabled-mobile="true" data-bss-hover-animate="pulse" id="14" style="font-family: 'Sandro Grottesco';font-weight: bold;font-size: 15px;background: linear-gradient(171deg, rgba(255,255,255,0.07), rgba(207,207,207,0.22) 100%), rgba(255,255,255,0.2);padding-top: 6px;padding-right: 12px;padding-bottom: 6px;padding-left: 12px;border-radius: 20px;margin: 5px;border-style: none;" type="button" onclick="hob_cod_func()">CODING</button><button class="btn btn-primary" data-bss-disabled-mobile="true" data-bss-hover-animate="pulse" id="15" style="font-family: 'Sandro Grottesco';font-weight: bold;font-size: 15px;background: linear-gradient(171deg, rgba(255,255,255,0.07), rgba(207,207,207,0.22) 100%), rgba(255,255,255,0.2);padding-top: 6px;padding-right: 12px;padding-bottom: 6px;padding-left: 12px;border-radius: 20px;margin: 5px;border-style: none;" type="button" onclick="hob_mus_func()">MUSIC</button><button class="btn btn-primary" data-bss-disabled-mobile="true" data-bss-hover-animate="pulse" id="16" style="font-family: 'Sandro Grottesco';font-weight: bold;font-size: 15px;background: linear-gradient(171deg, rgba(255,255,255,0.07), rgba(207,207,207,0.22) 100%), rgba(255,255,255,0.2);padding-top: 6px;padding-right: 12px;padding-bottom: 6px;padding-left: 12px;border-radius: 20px;margin: 5px;border-style: none;" type="button" onclick="hob_coo_func()">COOKING</button><button class="btn btn-primary" data-bss-disabled-mobile="true" data-bss-hover-animate="pulse" id="17" style="font-family: 'Sandro Grottesco';font-weight: bold;font-size: 15px;background: linear-gradient(171deg, rgba(255,255,255,0.07), rgba(207,207,207,0.22) 100%), rgba(255,255,255,0.2);padding-top: 6px;padding-right: 12px;padding-bottom: 6px;padding-left: 12px;border-radius: 20px;margin: 5px;border-style: none;" type="button" onclick="hob_mov_func()">MOVIES</button><button class="btn btn-primary" data-bss-disabled-mobile="true" data-bss-hover-animate="pulse" id="18" style="font-family: 'Sandro Grottesco';font-weight: bold;font-size: 15px;background: linear-gradient(171deg, rgba(255,255,255,0.07), rgba(207,207,207,0.22) 100%), rgba(255,255,255,0.2);padding-top: 6px;padding-right: 12px;padding-bottom: 6px;padding-left: 12px;border-radius: 20px;margin: 5px;border-style: none;" type="button" onclick="hob_gam_func()">GAMING</button><button class="btn btn-primary" data-bss-disabled-mobile="true" data-bss-hover-animate="pulse" id="19" style="font-family: 'Sandro Grottesco';font-weight: bold;font-size: 15px;background: linear-gradient(171deg, rgba(255,255,255,0.07), rgba(207,207,207,0.22) 100%), rgba(255,255,255,0.2);padding-top: 6px;padding-right: 12px;padding-bottom: 6px;padding-left: 12px;border-radius: 20px;margin: 5px;border-style: none;" type="button" onclick="hob_box_func()">BOXING</button><button class="btn btn-primary" data-bss-disabled-mobile="true" data-bss-hover-animate="pulse" id="20" style="font-family: 'Sandro Grottesco';font-weight: bold;font-size: 15px;background: linear-gradient(171deg, rgba(255,255,255,0.07), rgba(207,207,207,0.22) 100%), rgba(255,255,255,0.2);padding-top: 6px;padding-right: 12px;padding-bottom: 6px;padding-left: 12px;border-radius: 20px;margin: 5px;border-style: none;" type="button" onclick="hob_ten_func()">TENNIS</button><button class="btn btn-primary" data-bss-disabled-mobile="true" data-bss-hover-animate="pulse" id="21" style="font-family: 'Sandro Grottesco';font-weight: bold;font-size: 15px;background: linear-gradient(171deg, rgba(255,255,255,0.07), rgba(207,207,207,0.22) 100%), rgba(255,255,255,0.2);padding-top: 6px;padding-right: 12px;padding-bottom: 6px;padding-left: 12px;border-radius: 20px;margin: 5px;border-style: none;" type="button" onclick="hob_hik_func()">HIKING</button><button class="btn btn-primary" data-bss-disabled-mobile="true" data-bss-hover-animate="pulse" id="22" style="font-family: 'Sandro Grottesco';font-weight: bold;font-size: 15px;background: linear-gradient(171deg, rgba(255,255,255,0.07), rgba(207,207,207,0.22) 100%), rgba(255,255,255,0.2);padding-top: 6px;padding-right: 12px;padding-bottom: 6px;padding-left: 12px;border-radius: 20px;margin: 5px;border-style: none;" type="button" onclick="hob_hoc_func()">HOCKEY</button><button class="btn btn-primary" data-bss-disabled-mobile="true" data-bss-hover-animate="pulse" id="23" style="font-family: 'Sandro Grottesco';font-weight: bold;font-size: 15px;background: linear-gradient(171deg, rgba(255,255,255,0.07), rgba(207,207,207,0.22) 100%), rgba(255,255,255,0.2);padding-top: 6px;padding-right: 12px;padding-bottom: 6px;padding-left: 12px;border-radius: 20px;margin: 5px;border-style: none;" type="button" onclick="hob_weg_func()">WEIGHTLIFTING</button><button class="btn btn-primary" data-bss-disabled-mobile="true" data-bss-hover-animate="pulse" id="24" style="font-family: 'Sandro Grottesco';font-weight: bold;font-size: 15px;background: linear-gradient(171deg, rgba(255,255,255,0.07), rgba(207,207,207,0.22) 100%), rgba(255,255,255,0.2);padding-top: 6px;padding-right: 12px;padding-bottom: 6px;padding-left: 12px;border-radius: 20px;margin: 5px;border-style: none;" type="button" onclick="hob_rac_func()">RACING</button></div><!-- End: Hobby Selection Buttons -->
+            <h1 style="text-align: center;">What's your favorite color?</h1><input class="form-control form-control-color" type="color" style="border-style: none;background: linear-gradient(171deg, rgba(255,255,255,0.07), rgba(207,207,207,0.22) 100%), rgba(255,255,255,0.2);width: 50px;height: 50px;"><button class="btn btn-primary" id="submit" type="button" style="margin-top: 40px;background: linear-gradient(171deg, rgba(255,255,255,0.07), rgba(207,207,207,0.22) 100%), rgba(255,255,255,0.2);border-style: none;font-size: calc(1.3rem + 1.5vw);font-weight: bold;" onclick="submit">SUBMIT</button>
         </form>
     </div>
+    <div class="d-flex d-md-flex flex-column justify-content-start align-items-center" style="width: 100vw;height: 100vh;color: rgb(255,255,255);font-family: 'Sandro Grottesco';padding: 20px;padding-top: 50px;padding-bottom: 50px;">
+        <h1 style="font-weight: bold;">RECO'S</h1>
+        <p id="response_text" style="font-family: Inter, sans-serif;font-weight: 200;font-size: 20px;max-width: 80%;">&nbsp;</p>
+    </div><script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+<script>
+
+    prompt = "";
+
+    function resetButtons(){
+        //modify the css of buttons with id 1 through 12
+        for (var i = 1; i <= 12; i++) {
+            /*
+             font-family: 'Sandro Grottesco';
+             font-weight: bold;
+             font-size: 15px;
+             background: linear-gradient(171deg, rgba(255,255,255,0.07), rgba(207,207,207,0.22) 100%), rgba(255,255,255,0.2);
+             padding-top: 6px;
+             padding-right: 12px;
+             padding-bottom: 6px;
+             padding-left: 12px;
+             border-radius: 20px;
+             margin: 5px;
+             border-style: none;
+             border-color: white;
+             */
+            document.getElementById(i).style.background = "linear-gradient(171deg, rgba(255,255,255,0.07), rgba(207,207,207,0.22) 100%), rgba(255,255,255,0.2)";
+            document.getElementById(i).style.color = "white";
+        }
+    }
+
+    //COLLEGES
+    function col_ist_func() {
+        resetButtons()
+        document.getElementById(1).style.backgroundColor = "blue";
+        prompt = "Interested in technology, "
+        console.log("col_art clicked; college of IST selected");
+    }
+
+    function col_eng_func() {
+        resetButtons()
+        document.getElementById(2).style.backgroundColor = "blue";
+        prompt = "Interested in engineering, "
+        console.log("col_eng clicked; college of engineering selected");
+    }
+
+    function col_bus_func() {
+        resetButtons()
+        document.getElementById(3).style.backgroundColor = "blue";
+        prompt = "Interested in business, "
+        console.log("col_art clicked; college of business selected");
+    }
+
+    function col_ags_func() {
+        resetButtons()
+        document.getElementById(4).style.backgroundColor = "blue";
+        prompt = "Interested in agriculture, "
+        console.log("col_art clicked; college of AGSCI selected");
+    }
+
+    function col_aa_func() {
+        resetButtons()
+        document.getElementById(5).style.backgroundColor = "blue";
+        prompt = "Interested in architecture, "
+        console.log("col_art clicked; college of Arts & Achitecture selected");
+    }
+
+    function col_edu_func() {
+        resetButtons()
+        document.getElementById(6).style.backgroundColor = "blue";
+        prompt = "Interested in education, "
+        console.log("col_art clicked; college of education selected");
+    }
+
+    function col_hdd_func() {
+        resetButtons()
+        document.getElementById(7).style.backgroundColor = "blue";
+        prompt = "Interested in human-centered design and graphic design, "
+        console.log("col_art clicked; college of HDD selected");
+    }
+
+    function col_com_func() {
+        resetButtons()
+        document.getElementById(8).style.backgroundColor = "blue";
+        prompt = "Interested in communications, "
+        console.log("col_art clicked; college of communications selected");
+    }
+
+    function col_ems_func() {
+        resetButtons()
+        document.getElementById(9).style.backgroundColor = "blue";
+        prompt = "Interested in technology, "
+        console.log("col_art clicked; college of IST selected");
+    }
+
+    function col_lib_func() {
+        resetButtons()
+        document.getElementById(10).style.backgroundColor = "blue";
+        prompt = "Interested in liberal arts, "
+        console.log("col_art clicked; college of liberal arts selected");
+    }
+
+    function col_nur_func() {
+        resetButtons()
+        document.getElementById(11).style.backgroundColor = "blue";
+        prompt = "Interested in nursing, "
+        console.log("col_art clicked; college of nursing selected");
+    }
+
+    function col_sci_func() {
+        resetButtons()
+        document.getElementById(12).style.backgroundColor = "blue";
+        prompt = "Interested in science, "
+        console.log("col_art clicked; college of science selected");
+    }
+
+    var b13 = false;
+    var b14 = false;
+    var b15 = false;
+    var b16 = false;
+    var b17 = false;
+    var b18 = false;
+    var b19 = false;
+    var b20 = false;
+    var b21 = false;
+    var b22 = false;
+    var b23 = false;
+    var b24 = false;
+
+    //HOBBIES
+    function hob_inv_func() {
+        if (b13 ==false){
+            document.getElementById(13).style.backgroundColor = "blue";
+        }else{
+            document.getElementById(13).style.background = "linear-gradient(171deg, rgba(255,255,255,0.07), rgba(207,207,207,0.22) 100%), rgba(255,255,255,0.2)";
+        }
+        
+        prompt += "and interested in investing, "
+        console.log("col_art clicked; college of science selected");
+    }
+
+    function hob_cod_func() {
+        if (b14 ==false){
+            document.getElementById(14).style.backgroundColor = "blue";
+        }else{
+            document.getElementById(14).style.background = "linear-gradient(171deg, rgba(255,255,255,0.07), rgba(207,207,207,0.22) 100%), rgba(255,255,255,0.2)";
+        }
+        prompt += "and interested in coding, "
+        console.log("col_art clicked; college of science selected");
+    }
+
+    function hob_mus_func() {
+        if (b15 ==false){
+            document.getElementById(15).style.backgroundColor = "blue";
+        }else{
+            document.getElementById(15).style.background = "linear-gradient(171deg, rgba(255,255,255,0.07), rgba(207,207,207,0.22) 100%), rgba(255,255,255,0.2)";
+        }
+        prompt += "and interested in music, "
+        console.log("col_art clicked; college of science selected");
+    }
+
+    function hob_coo_func() {
+        if (b16 ==false){
+            document.getElementById(16).style.backgroundColor = "blue";
+        }else{
+            document.getElementById(16).style.background = "linear-gradient(171deg, rgba(255,255,255,0.07), rgba(207,207,207,0.22) 100%), rgba(255,255,255,0.2)";
+        }
+        prompt += "and interested in cooking, "
+        console.log("col_art clicked; college of science selected");
+    }
+
+    function hob_mov_func() {
+        if (b17 ==false){
+            document.getElementById(17).style.backgroundColor = "blue";
+        }else{
+            document.getElementById(17).style.background = "linear-gradient(171deg, rgba(255,255,255,0.07), rgba(207,207,207,0.22) 100%), rgba(255,255,255,0.2)";
+        }
+        prompt += "and interested in movies, "
+        console.log("col_art clicked; college of science selected");
+    }
+
+    function hob_gam_func() {
+        if (b18 ==false){
+            document.getElementById(18).style.backgroundColor = "blue";
+        }else{
+            document.getElementById(18).style.background = "linear-gradient(171deg, rgba(255,255,255,0.07), rgba(207,207,207,0.22) 100%), rgba(255,255,255,0.2)";
+        }
+        prompt += "and interested in gaming, "
+        console.log("col_art clicked; college of science selected");
+    }
+
+    function hob_box_func() {
+        if (b19 ==false){
+            document.getElementById(19).style.backgroundColor = "blue";
+        }else{
+            document.getElementById(19).style.background = "linear-gradient(171deg, rgba(255,255,255,0.07), rgba(207,207,207,0.22) 100%), rgba(255,255,255,0.2)";
+        }
+        prompt += "and interested in boxing, "
+        console.log("col_art clicked; college of science selected");
+    }
+
+    function hob_ten_func() {
+        if (b20 ==false){
+            document.getElementById(20).style.backgroundColor = "blue";
+        }else{
+            document.getElementById(20).style.background = "linear-gradient(171deg, rgba(255,255,255,0.07), rgba(207,207,207,0.22) 100%), rgba(255,255,255,0.2)";
+        }
+        prompt += "and interested in tennis, "
+        console.log("col_art clicked; college of science selected");
+    }
+
+    function hob_hik_func() {
+        if (b21 ==false){
+            document.getElementById(21).style.backgroundColor = "blue";
+        }else{
+            document.getElementById(21).style.background = "linear-gradient(171deg, rgba(255,255,255,0.07), rgba(207,207,207,0.22) 100%), rgba(255,255,255,0.2)";
+        }
+        prompt += "and interested in hiking, "
+        console.log("col_art clicked; college of science selected");
+    }
+
+    function hob_hoc_func() {
+        if (b22 ==false){
+            document.getElementById(22).style.backgroundColor = "blue";
+        }else{
+            document.getElementById(22).style.background = "linear-gradient(171deg, rgba(255,255,255,0.07), rgba(207,207,207,0.22) 100%), rgba(255,255,255,0.2)";
+        }
+        prompt += "and interested in hockey, "
+        console.log("col_art clicked; college of science selected");
+    }
+
+    function hob_weg_func() {
+        if (b23 ==false){
+            document.getElementById(23).style.backgroundColor = "blue";
+        }else{
+            document.getElementById(23).style.background = "linear-gradient(171deg, rgba(255,255,255,0.07), rgba(207,207,207,0.22) 100%), rgba(255,255,255,0.2)";
+        }
+        prompt += "and interested in weightlifting, "
+        console.log("col_art clicked; college of science selected");
+    }
+    
+    function hob_rac_func() {
+        if (b24 ==false){
+            document.getElementById(24).style.backgroundColor = "blue";
+        }else{
+            document.getElementById(24).style.background = "linear-gradient(171deg, rgba(255,255,255,0.07), rgba(207,207,207,0.22) 100%), rgba(255,255,255,0.2)";
+        }
+        prompt += "and interested in racing, "
+        console.log("col_art clicked; college of science selected");
+    }
+
+
+
+
+
+    var prompt = "";
+
+    function sleep(ms) {
+        return new Promise(resolve => setTimeout(resolve, ms));
+    }
+
+    function makeGetRequest(path) {
+        return new Promise(function (resolve, reject) {
+            axios.get(path).then(
+                (response) => {
+                    var result = response.data;
+                    console.log('Processing Request');
+                    resolve(result);
+                },
+                    (error) => {
+                    reject(error);
+                }
+            );
+        });
+    }
+
+    function submit() {
+        console.log("submit clicked; form processing...");
+        document.getElementById("response_text").innerHTML = "Fetching....";
+
+        //remove the last 2 characters of the prompt
+        prompt = prompt.substring(0, prompt.length - 2);
+
+        //URL encode the prompt variable
+        var encodedPrompt = encodeURIComponent(prompt);
+
+        document.getElementById("response_text").innerHTML = "Constructing URL...";
+        //create a variable that stores the URL to the API
+        const url = "https://api.gater.dev/complete/" + encodedPrompt;
+        console.log(url);
+
+        document.getElementById("response_text").innerHTML = "Fetching data from URL...";
+
+        (async() => {
+            var result = await makeGetRequest(url);
+            console.log(result.result);
+            document.getElementById("response_text").innerHTML = result.result;
+        })();
+
+    }
+
+    //run the 'submit' function when the button with id 'submit' is clicked
+    document.getElementById("submit").addEventListener("click", submit);
+
+</script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
     <script src="/assets/js/script.min.js"></script>
 </body>
