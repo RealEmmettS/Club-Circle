@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" style="min-height: 100vh;height: fit-content;">
+<html lang="en">
 
 <head>
     <meta charset="utf-8">
@@ -16,7 +16,8 @@
     <link rel="stylesheet" href="/assets/css/styles.min.css">
 </head>
 
-<body style="background: rgb(0,0,0);height: auto;width: 100vw;min-height: 100vh;">
+<body style="background: rgb(0,0,0);height: fit-content;width: 100vw;min-height: 100vh;">
+    <!-- Start: form -->
     <div class="d-flex flex-column justify-content-center align-items-center justify-content-md-center align-items-md-center" style="width: 100vw;background: url(&quot;/assets/img/3.png&quot;) left / cover repeat;padding: 20px;padding-top: 50px;padding-bottom: 50px;min-height: 100vh;height: auto;border-bottom: 1px solid rgb(255,255,255) ;">
         <form class="d-flex d-md-flex flex-column justify-content-center align-items-center justify-content-md-center align-items-md-center" style="width: 80%;height: fit-content;padding: 15px;background: linear-gradient(171deg, rgba(214,214,214,0.2), rgba(180,180,180,0.27) 100%), rgba(74,74,74,0.35);border-color: white;border-radius: 20px;font-family: 'Sandro Grottesco';font-size: 20px;color: rgb(255,255,255);padding-top: 30px;padding-bottom: 30px;min-height: 80%;padding-right: 20px;padding-left: 20px;">
             <h1 style="text-align: center;">What's your name?</h1><input class="form-control" type="text" data-bss-disabled-mobile="true" data-bss-hover-animate="pulse" style="font-family: 'Sandro Grottesco';font-weight: bold;font-size: 15px;background: linear-gradient(171deg, rgba(255,255,255,0.07), rgba(207,207,207,0.22) 100%), rgba(255,255,255,0.2);padding-top: 12px;padding-right: 24px;padding-bottom: 12px;padding-left: 24px;border-radius: 20px;height: 50px;margin-bottom: 50px;border-style: none;border-color: white;color: rgb(255,255,255);text-align: center;" href="/selection.html">
@@ -27,7 +28,8 @@
             <h1 style="text-align: center;">What's your favorite color?</h1><input class="form-control form-control-color" type="color" style="border-style: none;background: linear-gradient(171deg, rgba(255,255,255,0.07), rgba(207,207,207,0.22) 100%), rgba(255,255,255,0.2);width: 50px;height: 50px;"><!-- Start: line -->
             <div style="height: 1px;width: 50%;margin-top: 25px;background: #ffffff;"></div><!-- End: line --><button class="btn btn-primary" id="submit" type="button" style="margin-top: 25px;background: linear-gradient(171deg, rgba(255,255,255,0.07), rgba(207,207,207,0.22) 100%), rgba(255,255,255,0.2);border-style: none;font-size: calc(2rem + 2vw);font-weight: bold;font-family: Inter, sans-serif;padding-top: 5px;padding-bottom: 5px;padding-right: 24px;padding-left: 24px;" onclick="submit">SUBMIT</button>
         </form>
-    </div>
+    </div><!-- End: form -->
+    <!-- Start: responses -->
     <div class="d-flex d-md-flex flex-column justify-content-start align-items-center" style="width: 100vw;color: rgb(255,255,255);font-family: 'Sandro Grottesco';padding: 20px;padding-top: 50px;padding-bottom: 50px;background: url(&quot;/assets/img/4.png&quot;) top left / cover no-repeat;min-height: 100vh\;">
         <h1 id="reco-header" style="font-weight: bold;margin-bottom: 20px;">RECO'S</h1><!-- Start: Card 1 -->
         <div class="d-flex flex-column justify-content-start align-items-center" style="width: 90%;background: linear-gradient(171deg, rgba(255,255,255,0.07), rgba(207,207,207,0.22) 100%), rgba(255,255,255,0.2);border-radius: 20px;color: rgb(255,255,255);font-family: 'Gin &amp; Js';font-size: 20px;min-height: 70%;padding-top: 20px;padding-bottom: 20px;padding-right: 5px;padding-left: 5px;margin-bottom: 20px;height: auto;">
@@ -44,7 +46,7 @@
             <h1 style="font-weight: bold;">CLUB 3</h1>
             <p id="response3" style="font-family: Inter, sans-serif;font-weight: 200;font-size: 20px;max-width: 80%;margin-bottom: 20px;">&nbsp;</p>
         </div><!-- End: Card 3 -->
-    </div><script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    </div><!-- End: responses --><script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 
 <script>
 
@@ -475,7 +477,12 @@
     //run the 'submit' function when the button with id 'submit' is clicked
     document.getElementById("submit").addEventListener("click", submit);
 
-</script>
+</script><!-- Start: Footer Dark -->
+    <footer class="text-center bg-dark" style="background: black;width: 100vw;height: fit-content;max-height: 30%;">
+        <div class="d-flex d-md-flex flex-row justify-content-center align-items-center justify-content-md-center align-items-md-center" style="padding: 20px;">
+            <p class="text-muted mb-0" style="font-family: Inter, sans-serif;">Copyright © 2022 Club Circle</p>
+        </div>
+    </footer><!-- End: Footer Dark -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
     <script src="/assets/js/script.min.js"></script>
 </body>
