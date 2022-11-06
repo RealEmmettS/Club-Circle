@@ -1,0 +1,33 @@
+@font-face {
+    font-family: 'Frame Gothic';
+    src: url('FrameGothic-Regular.woff2') format('woff2'),
+        url('FrameGothic-Regular.woff') format('woff'),
+        url('FrameGothic-Regular.ttf') format('truetype'),
+        url('FrameGothic-Regular.svg#FrameGothic-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Frame Gothic';
+    src: url('FrameGothic-Medium.woff2') format('woff2'),
+        url('FrameGothic-Medium.woff') format('woff'),
+        url('FrameGothic-Medium.ttf') format('truetype'),
+        url('FrameGothic-Medium.svg#FrameGothic-Medium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Frame Gothic';
+    src: url('FrameGothic-SemiBold.woff2') format('woff2'),
+        url('FrameGothic-SemiBold.woff') format('woff'),
+        url('FrameGothic-SemiBold.ttf') format('truetype'),
+        url('FrameGothic-SemiBold.svg#FrameGothic-SemiBold') format('svg');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
