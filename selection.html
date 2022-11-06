@@ -12,24 +12,40 @@
 </head>
 
 <body style="background: rgb(0,0,0);height: auto;width: 100vw;min-height: 100vh;">
-    <div class="d-flex flex-column justify-content-center align-items-center justify-content-md-center align-items-md-center" style="width: 100vw;background: url(&quot;/assets/img/3.png&quot;) left / cover repeat;padding: 20px;padding-top: 50px;padding-bottom: 50px;min-height: 100vh;height: auto;border-bottom-style: solid;border-bottom-color: rgb(255,255,255);">
+    <div class="d-flex flex-column justify-content-center align-items-center justify-content-md-center align-items-md-center" style="width: 100vw;background: url(&quot;/assets/img/3.png&quot;) left / cover repeat;padding: 20px;padding-top: 50px;padding-bottom: 50px;min-height: 100vh;height: auto;border-bottom: 1px solid rgb(255,255,255) ;">
         <form class="d-flex d-md-flex flex-column justify-content-center align-items-center justify-content-md-center align-items-md-center" style="width: 80%;height: fit-content;padding: 15px;background: linear-gradient(171deg, rgba(214,214,214,0.2), rgba(180,180,180,0.27) 100%), rgba(74,74,74,0.35);border-color: white;border-radius: 20px;font-family: 'Sandro Grottesco';font-size: 20px;color: rgb(255,255,255);padding-top: 30px;padding-bottom: 30px;min-height: 80%;padding-right: 20px;padding-left: 20px;">
-            <h1 style="text-align: center;">What's your name?</h1><input class="form-control" type="text" data-bss-disabled-mobile="true" data-bss-hover-animate="pulse" style="font-family: 'Sandro Grottesco';font-weight: bold;font-size: 15px;background: linear-gradient(171deg, rgba(255,255,255,0.07), rgba(207,207,207,0.22) 100%), rgba(255,255,255,0.2);padding-top: 12px;padding-right: 24px;padding-bottom: 12px;padding-left: 24px;border-radius: 20px;height: 50px;margin-bottom: 40px;border-style: none;border-color: white;color: rgb(255,255,255);" href="/selection.html">
+            <h1 style="text-align: center;">What's your name?</h1><input class="form-control" type="text" data-bss-disabled-mobile="true" data-bss-hover-animate="pulse" style="font-family: 'Sandro Grottesco';font-weight: bold;font-size: 15px;background: linear-gradient(171deg, rgba(255,255,255,0.07), rgba(207,207,207,0.22) 100%), rgba(255,255,255,0.2);padding-top: 12px;padding-right: 24px;padding-bottom: 12px;padding-left: 24px;border-radius: 20px;height: 50px;margin-bottom: 50px;border-style: none;border-color: white;color: rgb(255,255,255);" href="/selection.html">
             <h1 style="text-align: center;">What college are you in?</h1><!-- Start: College Selection Buttons -->
-            <div class="d-flex d-md-flex flex-row justify-content-center align-items-center flex-wrap justify-content-md-center align-items-md-center" style="width: 100%;margin-bottom: 40px;"><button class="btn btn-primary" data-bss-disabled-mobile="true" data-bss-hover-animate="pulse" id="1" style="font-family: 'Sandro Grottesco';font-weight: bold;font-size: 15px;background: linear-gradient(171deg, rgba(255,255,255,0.07), rgba(207,207,207,0.22) 100%), rgba(255,255,255,0.2);padding-top: 6px;padding-right: 12px;padding-bottom: 6px;padding-left: 12px;border-radius: 20px;margin: 5px;border-style: none;border-color: white;" type="button" onclick="col_ist_func()">IST</button><button class="btn btn-primary" data-bss-disabled-mobile="true" data-bss-hover-animate="pulse" id="2" style="font-family: 'Sandro Grottesco';font-weight: bold;font-size: 15px;background: linear-gradient(171deg, rgba(255,255,255,0.07), rgba(207,207,207,0.22) 100%), rgba(255,255,255,0.2);padding-top: 6px;padding-right: 12px;padding-bottom: 6px;padding-left: 12px;border-radius: 20px;margin: 5px;border-style: none;border-color: white;" onclick="col_eng_func()" type="button">ENGINEERING</button><button class="btn btn-primary" data-bss-disabled-mobile="true" data-bss-hover-animate="pulse" id="3" style="font-family: 'Sandro Grottesco';font-weight: bold;font-size: 15px;background: linear-gradient(171deg, rgba(255,255,255,0.07), rgba(207,207,207,0.22) 100%), rgba(255,255,255,0.2);padding-top: 6px;padding-right: 12px;padding-bottom: 6px;padding-left: 12px;border-radius: 20px;margin: 5px;border-style: none;border-color: white;" type="button" onclick="col_bus_func()">BUSINESS</button><button class="btn btn-primary" data-bss-disabled-mobile="true" data-bss-hover-animate="pulse" id="4" style="font-family: 'Sandro Grottesco';font-weight: bold;font-size: 15px;background: linear-gradient(171deg, rgba(255,255,255,0.07), rgba(207,207,207,0.22) 100%), rgba(255,255,255,0.2);padding-top: 6px;padding-right: 12px;padding-bottom: 6px;padding-left: 12px;border-radius: 20px;margin: 5px;border-style: none;border-color: white;" type="button" onclick="col_ags_func()">AGSCI</button><button class="btn btn-primary" data-bss-disabled-mobile="true" data-bss-hover-animate="pulse" id="5" style="font-family: 'Sandro Grottesco';font-weight: bold;font-size: 15px;background: linear-gradient(171deg, rgba(255,255,255,0.07), rgba(207,207,207,0.22) 100%), rgba(255,255,255,0.2);padding-top: 6px;padding-right: 12px;padding-bottom: 6px;padding-left: 12px;border-radius: 20px;margin: 5px;border-style: none;border-color: white;" type="button" onclick="col_aa_func()">ARTS &amp; ARCHITECTURE</button><button class="btn btn-primary" data-bss-disabled-mobile="true" data-bss-hover-animate="pulse" id="6" style="font-family: 'Sandro Grottesco';font-weight: bold;font-size: 15px;background: linear-gradient(171deg, rgba(255,255,255,0.07), rgba(207,207,207,0.22) 100%), rgba(255,255,255,0.2);padding-top: 6px;padding-right: 12px;padding-bottom: 6px;padding-left: 12px;border-radius: 20px;margin: 5px;border-style: none;border-color: white;" type="button" onclick="col_edu_func()">EDUCATION</button><button class="btn btn-primary" data-bss-disabled-mobile="true" data-bss-hover-animate="pulse" id="7" style="font-family: 'Sandro Grottesco';font-weight: bold;font-size: 15px;background: linear-gradient(171deg, rgba(255,255,255,0.07), rgba(207,207,207,0.22) 100%), rgba(255,255,255,0.2);padding-top: 6px;padding-right: 12px;padding-bottom: 6px;padding-left: 12px;border-radius: 20px;margin: 5px;border-style: none;border-color: white;" type="button" onclick="col_hdd_func()">HHD</button><button class="btn btn-primary" data-bss-disabled-mobile="true" data-bss-hover-animate="pulse" id="8" style="font-family: 'Sandro Grottesco';font-weight: bold;font-size: 15px;background: linear-gradient(171deg, rgba(255,255,255,0.07), rgba(207,207,207,0.22) 100%), rgba(255,255,255,0.2);padding-top: 6px;padding-right: 12px;padding-bottom: 6px;padding-left: 12px;border-radius: 20px;margin: 5px;border-style: none;border-color: white;" type="button" onclick="col_com_func()">COMMUNICATIONS</button><button class="btn btn-primary" data-bss-disabled-mobile="true" data-bss-hover-animate="pulse" id="9" style="font-family: 'Sandro Grottesco';font-weight: bold;font-size: 15px;background: linear-gradient(171deg, rgba(255,255,255,0.07), rgba(207,207,207,0.22) 100%), rgba(255,255,255,0.2);padding-top: 6px;padding-right: 12px;padding-bottom: 6px;padding-left: 12px;border-radius: 20px;margin: 5px;border-style: none;border-color: white;" type="button" onclick="col_ems_func()">EARTH &amp; MINERAL</button><button class="btn btn-primary" data-bss-disabled-mobile="true" data-bss-hover-animate="pulse" id="10" style="font-family: 'Sandro Grottesco';font-weight: bold;font-size: 15px;background: linear-gradient(171deg, rgba(255,255,255,0.07), rgba(207,207,207,0.22) 100%), rgba(255,255,255,0.2);padding-top: 6px;padding-right: 12px;padding-bottom: 6px;padding-left: 12px;border-radius: 20px;margin: 5px;border-style: none;border-color: white;" type="button" onclick="col_lib_func()">LIBERAL ARTS</button><button class="btn btn-primary" data-bss-disabled-mobile="true" data-bss-hover-animate="pulse" id="11" style="font-family: 'Sandro Grottesco';font-weight: bold;font-size: 15px;background: linear-gradient(171deg, rgba(255,255,255,0.07), rgba(207,207,207,0.22) 100%), rgba(255,255,255,0.2);padding-top: 6px;padding-right: 12px;padding-bottom: 6px;padding-left: 12px;border-radius: 20px;margin: 5px;border-style: none;border-color: white;" type="button" onclick="col_nur_func()">NURSING</button><button class="btn btn-primary" data-bss-disabled-mobile="true" data-bss-hover-animate="pulse" id="12" style="font-family: 'Sandro Grottesco';font-weight: bold;font-size: 15px;background: linear-gradient(171deg, rgba(255,255,255,0.07), rgba(207,207,207,0.22) 100%), rgba(255,255,255,0.2);padding-top: 6px;padding-right: 12px;padding-bottom: 6px;padding-left: 12px;border-radius: 20px;margin: 5px;border-style: none;border-color: white;" type="button" onclick="col_sci_func()">SCIENCE</button></div><!-- End: College Selection Buttons -->
+            <div class="d-flex d-md-flex flex-row justify-content-center align-items-center flex-wrap justify-content-md-center align-items-md-center" style="width: 100%;margin-bottom: 50px;"><button class="btn btn-primary" data-bss-disabled-mobile="true" data-bss-hover-animate="pulse" id="1" style="font-family: 'Sandro Grottesco';font-weight: bold;font-size: 15px;background: linear-gradient(171deg, rgba(255,255,255,0.07), rgba(207,207,207,0.22) 100%), rgba(255,255,255,0.2);padding-top: 6px;padding-right: 12px;padding-bottom: 6px;padding-left: 12px;border-radius: 20px;margin: 5px;border-style: none;border-color: white;color: rgb(255,255,255);" type="button" onclick="col_ist_func()">IST</button><button class="btn btn-primary" data-bss-disabled-mobile="true" data-bss-hover-animate="pulse" id="2" style="font-family: 'Sandro Grottesco';font-weight: bold;font-size: 15px;background: linear-gradient(171deg, rgba(255,255,255,0.07), rgba(207,207,207,0.22) 100%), rgba(255,255,255,0.2);padding-top: 6px;padding-right: 12px;padding-bottom: 6px;padding-left: 12px;border-radius: 20px;margin: 5px;border-style: none;border-color: white;color: rgb(255,255,255);" onclick="col_eng_func()" type="button">ENGINEERING</button><button class="btn btn-primary" data-bss-disabled-mobile="true" data-bss-hover-animate="pulse" id="3" style="font-family: 'Sandro Grottesco';font-weight: bold;font-size: 15px;background: linear-gradient(171deg, rgba(255,255,255,0.07), rgba(207,207,207,0.22) 100%), rgba(255,255,255,0.2);padding-top: 6px;padding-right: 12px;padding-bottom: 6px;padding-left: 12px;border-radius: 20px;margin: 5px;border-style: none;border-color: white;color: rgb(255,255,255);" type="button" onclick="col_bus_func()">BUSINESS</button><button class="btn btn-primary" data-bss-disabled-mobile="true" data-bss-hover-animate="pulse" id="4" style="font-family: 'Sandro Grottesco';font-weight: bold;font-size: 15px;background: linear-gradient(171deg, rgba(255,255,255,0.07), rgba(207,207,207,0.22) 100%), rgba(255,255,255,0.2);padding-top: 6px;padding-right: 12px;padding-bottom: 6px;padding-left: 12px;border-radius: 20px;margin: 5px;border-style: none;border-color: white;color: rgb(255,255,255);" type="button" onclick="col_ags_func()">AGSCI</button><button class="btn btn-primary" data-bss-disabled-mobile="true" data-bss-hover-animate="pulse" id="5" style="font-family: 'Sandro Grottesco';font-weight: bold;font-size: 15px;background: linear-gradient(171deg, rgba(255,255,255,0.07), rgba(207,207,207,0.22) 100%), rgba(255,255,255,0.2);padding-top: 6px;padding-right: 12px;padding-bottom: 6px;padding-left: 12px;border-radius: 20px;margin: 5px;border-style: none;border-color: white;color: rgb(255,255,255);" type="button" onclick="col_aa_func()">ARTS &amp; ARCHITECTURE</button><button class="btn btn-primary" data-bss-disabled-mobile="true" data-bss-hover-animate="pulse" id="6" style="font-family: 'Sandro Grottesco';font-weight: bold;font-size: 15px;background: linear-gradient(171deg, rgba(255,255,255,0.07), rgba(207,207,207,0.22) 100%), rgba(255,255,255,0.2);padding-top: 6px;padding-right: 12px;padding-bottom: 6px;padding-left: 12px;border-radius: 20px;margin: 5px;border-style: none;border-color: white;color: rgb(255,255,255);" type="button" onclick="col_edu_func()">EDUCATION</button><button class="btn btn-primary" data-bss-disabled-mobile="true" data-bss-hover-animate="pulse" id="7" style="font-family: 'Sandro Grottesco';font-weight: bold;font-size: 15px;background: linear-gradient(171deg, rgba(255,255,255,0.07), rgba(207,207,207,0.22) 100%), rgba(255,255,255,0.2);padding-top: 6px;padding-right: 12px;padding-bottom: 6px;padding-left: 12px;border-radius: 20px;margin: 5px;border-style: none;border-color: white;color: rgb(255,255,255);" type="button" onclick="col_hdd_func()">HHD</button><button class="btn btn-primary" data-bss-disabled-mobile="true" data-bss-hover-animate="pulse" id="8" style="font-family: 'Sandro Grottesco';font-weight: bold;font-size: 15px;background: linear-gradient(171deg, rgba(255,255,255,0.07), rgba(207,207,207,0.22) 100%), rgba(255,255,255,0.2);padding-top: 6px;padding-right: 12px;padding-bottom: 6px;padding-left: 12px;border-radius: 20px;margin: 5px;border-style: none;border-color: white;color: rgb(255,255,255);" type="button" onclick="col_com_func()">COMMUNICATIONS</button><button class="btn btn-primary" data-bss-disabled-mobile="true" data-bss-hover-animate="pulse" id="9" style="font-family: 'Sandro Grottesco';font-weight: bold;font-size: 15px;background: linear-gradient(171deg, rgba(255,255,255,0.07), rgba(207,207,207,0.22) 100%), rgba(255,255,255,0.2);padding-top: 6px;padding-right: 12px;padding-bottom: 6px;padding-left: 12px;border-radius: 20px;margin: 5px;border-style: none;border-color: white;color: rgb(255,255,255);" type="button" onclick="col_ems_func()">EARTH &amp; MINERAL</button><button class="btn btn-primary" data-bss-disabled-mobile="true" data-bss-hover-animate="pulse" id="10" style="font-family: 'Sandro Grottesco';font-weight: bold;font-size: 15px;background: linear-gradient(171deg, rgba(255,255,255,0.07), rgba(207,207,207,0.22) 100%), rgba(255,255,255,0.2);padding-top: 6px;padding-right: 12px;padding-bottom: 6px;padding-left: 12px;border-radius: 20px;margin: 5px;border-style: none;border-color: white;color: rgb(255,255,255);" type="button" onclick="col_lib_func()">LIBERAL ARTS</button><button class="btn btn-primary" data-bss-disabled-mobile="true" data-bss-hover-animate="pulse" id="11" style="font-family: 'Sandro Grottesco';font-weight: bold;font-size: 15px;background: linear-gradient(171deg, rgba(255,255,255,0.07), rgba(207,207,207,0.22) 100%), rgba(255,255,255,0.2);padding-top: 6px;padding-right: 12px;padding-bottom: 6px;padding-left: 12px;border-radius: 20px;margin: 5px;border-style: none;border-color: white;color: rgb(255,255,255);" type="button" onclick="col_nur_func()">NURSING</button><button class="btn btn-primary" data-bss-disabled-mobile="true" data-bss-hover-animate="pulse" id="12" style="font-family: 'Sandro Grottesco';font-weight: bold;font-size: 15px;background: linear-gradient(171deg, rgba(255,255,255,0.07), rgba(207,207,207,0.22) 100%), rgba(255,255,255,0.2);padding-top: 6px;padding-right: 12px;padding-bottom: 6px;padding-left: 12px;border-radius: 20px;margin: 5px;border-style: none;border-color: white;color: rgb(255,255,255);" type="button" onclick="col_sci_func()">SCIENCE</button></div><!-- End: College Selection Buttons -->
             <h1 style="text-align: center;">What are your hobbies?</h1><!-- Start: Hobby Selection Buttons -->
-            <div class="d-flex d-md-flex flex-row justify-content-center align-items-center flex-wrap justify-content-md-center align-items-md-center" style="width: 100%;margin-bottom: 40px;"><button class="btn btn-primary" data-bss-disabled-mobile="true" data-bss-hover-animate="pulse" id="13" style="font-family: 'Sandro Grottesco';font-weight: bold;font-size: 15px;background: linear-gradient(171deg, rgba(255,255,255,0.07), rgba(207,207,207,0.22) 100%), rgba(255,255,255,0.2);padding-top: 6px;padding-right: 12px;padding-bottom: 6px;padding-left: 12px;border-radius: 20px;margin: 5px;border-style: none;" type="button" onclick="hob_inv_func()">INVESTING</button><button class="btn btn-primary" data-bss-disabled-mobile="true" data-bss-hover-animate="pulse" id="14" style="font-family: 'Sandro Grottesco';font-weight: bold;font-size: 15px;background: linear-gradient(171deg, rgba(255,255,255,0.07), rgba(207,207,207,0.22) 100%), rgba(255,255,255,0.2);padding-top: 6px;padding-right: 12px;padding-bottom: 6px;padding-left: 12px;border-radius: 20px;margin: 5px;border-style: none;" type="button" onclick="hob_cod_func()">CODING</button><button class="btn btn-primary" data-bss-disabled-mobile="true" data-bss-hover-animate="pulse" id="15" style="font-family: 'Sandro Grottesco';font-weight: bold;font-size: 15px;background: linear-gradient(171deg, rgba(255,255,255,0.07), rgba(207,207,207,0.22) 100%), rgba(255,255,255,0.2);padding-top: 6px;padding-right: 12px;padding-bottom: 6px;padding-left: 12px;border-radius: 20px;margin: 5px;border-style: none;" type="button" onclick="hob_mus_func()">MUSIC</button><button class="btn btn-primary" data-bss-disabled-mobile="true" data-bss-hover-animate="pulse" id="16" style="font-family: 'Sandro Grottesco';font-weight: bold;font-size: 15px;background: linear-gradient(171deg, rgba(255,255,255,0.07), rgba(207,207,207,0.22) 100%), rgba(255,255,255,0.2);padding-top: 6px;padding-right: 12px;padding-bottom: 6px;padding-left: 12px;border-radius: 20px;margin: 5px;border-style: none;" type="button" onclick="hob_coo_func()">COOKING</button><button class="btn btn-primary" data-bss-disabled-mobile="true" data-bss-hover-animate="pulse" id="17" style="font-family: 'Sandro Grottesco';font-weight: bold;font-size: 15px;background: linear-gradient(171deg, rgba(255,255,255,0.07), rgba(207,207,207,0.22) 100%), rgba(255,255,255,0.2);padding-top: 6px;padding-right: 12px;padding-bottom: 6px;padding-left: 12px;border-radius: 20px;margin: 5px;border-style: none;" type="button" onclick="hob_mov_func()">MOVIES</button><button class="btn btn-primary" data-bss-disabled-mobile="true" data-bss-hover-animate="pulse" id="18" style="font-family: 'Sandro Grottesco';font-weight: bold;font-size: 15px;background: linear-gradient(171deg, rgba(255,255,255,0.07), rgba(207,207,207,0.22) 100%), rgba(255,255,255,0.2);padding-top: 6px;padding-right: 12px;padding-bottom: 6px;padding-left: 12px;border-radius: 20px;margin: 5px;border-style: none;" type="button" onclick="hob_gam_func()">GAMING</button><button class="btn btn-primary" data-bss-disabled-mobile="true" data-bss-hover-animate="pulse" id="19" style="font-family: 'Sandro Grottesco';font-weight: bold;font-size: 15px;background: linear-gradient(171deg, rgba(255,255,255,0.07), rgba(207,207,207,0.22) 100%), rgba(255,255,255,0.2);padding-top: 6px;padding-right: 12px;padding-bottom: 6px;padding-left: 12px;border-radius: 20px;margin: 5px;border-style: none;" type="button" onclick="hob_box_func()">BOXING</button><button class="btn btn-primary" data-bss-disabled-mobile="true" data-bss-hover-animate="pulse" id="20" style="font-family: 'Sandro Grottesco';font-weight: bold;font-size: 15px;background: linear-gradient(171deg, rgba(255,255,255,0.07), rgba(207,207,207,0.22) 100%), rgba(255,255,255,0.2);padding-top: 6px;padding-right: 12px;padding-bottom: 6px;padding-left: 12px;border-radius: 20px;margin: 5px;border-style: none;" type="button" onclick="hob_ten_func()">TENNIS</button><button class="btn btn-primary" data-bss-disabled-mobile="true" data-bss-hover-animate="pulse" id="21" style="font-family: 'Sandro Grottesco';font-weight: bold;font-size: 15px;background: linear-gradient(171deg, rgba(255,255,255,0.07), rgba(207,207,207,0.22) 100%), rgba(255,255,255,0.2);padding-top: 6px;padding-right: 12px;padding-bottom: 6px;padding-left: 12px;border-radius: 20px;margin: 5px;border-style: none;" type="button" onclick="hob_hik_func()">HIKING</button><button class="btn btn-primary" data-bss-disabled-mobile="true" data-bss-hover-animate="pulse" id="22" style="font-family: 'Sandro Grottesco';font-weight: bold;font-size: 15px;background: linear-gradient(171deg, rgba(255,255,255,0.07), rgba(207,207,207,0.22) 100%), rgba(255,255,255,0.2);padding-top: 6px;padding-right: 12px;padding-bottom: 6px;padding-left: 12px;border-radius: 20px;margin: 5px;border-style: none;" type="button" onclick="hob_hoc_func()">HOCKEY</button><button class="btn btn-primary" data-bss-disabled-mobile="true" data-bss-hover-animate="pulse" id="23" style="font-family: 'Sandro Grottesco';font-weight: bold;font-size: 15px;background: linear-gradient(171deg, rgba(255,255,255,0.07), rgba(207,207,207,0.22) 100%), rgba(255,255,255,0.2);padding-top: 6px;padding-right: 12px;padding-bottom: 6px;padding-left: 12px;border-radius: 20px;margin: 5px;border-style: none;" type="button" onclick="hob_weg_func()">WEIGHTLIFTING</button><button class="btn btn-primary" data-bss-disabled-mobile="true" data-bss-hover-animate="pulse" id="24" style="font-family: 'Sandro Grottesco';font-weight: bold;font-size: 15px;background: linear-gradient(171deg, rgba(255,255,255,0.07), rgba(207,207,207,0.22) 100%), rgba(255,255,255,0.2);padding-top: 6px;padding-right: 12px;padding-bottom: 6px;padding-left: 12px;border-radius: 20px;margin: 5px;border-style: none;" type="button" onclick="hob_rac_func()">RACING</button></div><!-- End: Hobby Selection Buttons -->
-            <h1 style="text-align: center;">What's your favorite color?</h1><input class="form-control form-control-color" type="color" style="border-style: none;background: linear-gradient(171deg, rgba(255,255,255,0.07), rgba(207,207,207,0.22) 100%), rgba(255,255,255,0.2);width: 50px;height: 50px;"><button class="btn btn-primary" id="submit" type="button" style="margin-top: 40px;background: linear-gradient(171deg, rgba(255,255,255,0.07), rgba(207,207,207,0.22) 100%), rgba(255,255,255,0.2);border-style: none;font-size: calc(1.3rem + 1.5vw);font-weight: bold;" onclick="submit">SUBMIT</button>
+            <div class="d-flex d-md-flex flex-row justify-content-center align-items-center flex-wrap justify-content-md-center align-items-md-center" style="width: 100%;margin-bottom: 50px;"><button class="btn btn-primary" data-bss-disabled-mobile="true" data-bss-hover-animate="pulse" id="13" style="font-family: 'Sandro Grottesco';font-weight: bold;font-size: 15px;background: linear-gradient(171deg, rgba(255,255,255,0.07), rgba(207,207,207,0.22) 100%), rgba(255,255,255,0.2);padding-top: 6px;padding-right: 12px;padding-bottom: 6px;padding-left: 12px;border-radius: 20px;margin: 5px;border-style: none;color: rgb(255,255,255);" type="button" onclick="hob_inv_func()">INVESTING</button><button class="btn btn-primary" data-bss-disabled-mobile="true" data-bss-hover-animate="pulse" id="14" style="font-family: 'Sandro Grottesco';font-weight: bold;font-size: 15px;background: linear-gradient(171deg, rgba(255,255,255,0.07), rgba(207,207,207,0.22) 100%), rgba(255,255,255,0.2);padding-top: 6px;padding-right: 12px;padding-bottom: 6px;padding-left: 12px;border-radius: 20px;margin: 5px;border-style: none;color: rgb(255,255,255);" type="button" onclick="hob_cod_func()">CODING</button><button class="btn btn-primary" data-bss-disabled-mobile="true" data-bss-hover-animate="pulse" id="15" style="font-family: 'Sandro Grottesco';font-weight: bold;font-size: 15px;background: linear-gradient(171deg, rgba(255,255,255,0.07), rgba(207,207,207,0.22) 100%), rgba(255,255,255,0.2);padding-top: 6px;padding-right: 12px;padding-bottom: 6px;padding-left: 12px;border-radius: 20px;margin: 5px;border-style: none;color: rgb(255,255,255);" type="button" onclick="hob_mus_func()">MUSIC</button><button class="btn btn-primary" data-bss-disabled-mobile="true" data-bss-hover-animate="pulse" id="16" style="font-family: 'Sandro Grottesco';font-weight: bold;font-size: 15px;background: linear-gradient(171deg, rgba(255,255,255,0.07), rgba(207,207,207,0.22) 100%), rgba(255,255,255,0.2);padding-top: 6px;padding-right: 12px;padding-bottom: 6px;padding-left: 12px;border-radius: 20px;margin: 5px;border-style: none;color: rgb(255,255,255);" type="button" onclick="hob_coo_func()">COOKING</button><button class="btn btn-primary" data-bss-disabled-mobile="true" data-bss-hover-animate="pulse" id="17" style="font-family: 'Sandro Grottesco';font-weight: bold;font-size: 15px;background: linear-gradient(171deg, rgba(255,255,255,0.07), rgba(207,207,207,0.22) 100%), rgba(255,255,255,0.2);padding-top: 6px;padding-right: 12px;padding-bottom: 6px;padding-left: 12px;border-radius: 20px;margin: 5px;border-style: none;color: rgb(255,255,255);" type="button" onclick="hob_mov_func()">MOVIES</button><button class="btn btn-primary" data-bss-disabled-mobile="true" data-bss-hover-animate="pulse" id="18" style="font-family: 'Sandro Grottesco';font-weight: bold;font-size: 15px;background: linear-gradient(171deg, rgba(255,255,255,0.07), rgba(207,207,207,0.22) 100%), rgba(255,255,255,0.2);padding-top: 6px;padding-right: 12px;padding-bottom: 6px;padding-left: 12px;border-radius: 20px;margin: 5px;border-style: none;color: rgb(255,255,255);" type="button" onclick="hob_gam_func()">GAMING</button><button class="btn btn-primary" data-bss-disabled-mobile="true" data-bss-hover-animate="pulse" id="19" style="font-family: 'Sandro Grottesco';font-weight: bold;font-size: 15px;background: linear-gradient(171deg, rgba(255,255,255,0.07), rgba(207,207,207,0.22) 100%), rgba(255,255,255,0.2);padding-top: 6px;padding-right: 12px;padding-bottom: 6px;padding-left: 12px;border-radius: 20px;margin: 5px;border-style: none;color: rgb(255,255,255);" type="button" onclick="hob_box_func()">BOXING</button><button class="btn btn-primary" data-bss-disabled-mobile="true" data-bss-hover-animate="pulse" id="20" style="font-family: 'Sandro Grottesco';font-weight: bold;font-size: 15px;background: linear-gradient(171deg, rgba(255,255,255,0.07), rgba(207,207,207,0.22) 100%), rgba(255,255,255,0.2);padding-top: 6px;padding-right: 12px;padding-bottom: 6px;padding-left: 12px;border-radius: 20px;margin: 5px;border-style: none;color: rgb(255,255,255);" type="button" onclick="hob_ten_func()">TENNIS</button><button class="btn btn-primary" data-bss-disabled-mobile="true" data-bss-hover-animate="pulse" id="21" style="font-family: 'Sandro Grottesco';font-weight: bold;font-size: 15px;background: linear-gradient(171deg, rgba(255,255,255,0.07), rgba(207,207,207,0.22) 100%), rgba(255,255,255,0.2);padding-top: 6px;padding-right: 12px;padding-bottom: 6px;padding-left: 12px;border-radius: 20px;margin: 5px;border-style: none;color: rgb(255,255,255);" type="button" onclick="hob_hik_func()">HIKING</button><button class="btn btn-primary" data-bss-disabled-mobile="true" data-bss-hover-animate="pulse" id="22" style="font-family: 'Sandro Grottesco';font-weight: bold;font-size: 15px;background: linear-gradient(171deg, rgba(255,255,255,0.07), rgba(207,207,207,0.22) 100%), rgba(255,255,255,0.2);padding-top: 6px;padding-right: 12px;padding-bottom: 6px;padding-left: 12px;border-radius: 20px;margin: 5px;border-style: none;color: rgb(255,255,255);" type="button" onclick="hob_hoc_func()">HOCKEY</button><button class="btn btn-primary" data-bss-disabled-mobile="true" data-bss-hover-animate="pulse" id="23" style="font-family: 'Sandro Grottesco';font-weight: bold;font-size: 15px;background: linear-gradient(171deg, rgba(255,255,255,0.07), rgba(207,207,207,0.22) 100%), rgba(255,255,255,0.2);padding-top: 6px;padding-right: 12px;padding-bottom: 6px;padding-left: 12px;border-radius: 20px;margin: 5px;border-style: none;color: rgb(255,255,255);" type="button" onclick="hob_weg_func()">WEIGHTLIFTING</button><button class="btn btn-primary" data-bss-disabled-mobile="true" data-bss-hover-animate="pulse" id="24" style="font-family: 'Sandro Grottesco';font-weight: bold;font-size: 15px;background: linear-gradient(171deg, rgba(255,255,255,0.07), rgba(207,207,207,0.22) 100%), rgba(255,255,255,0.2);padding-top: 6px;padding-right: 12px;padding-bottom: 6px;padding-left: 12px;border-radius: 20px;margin: 5px;border-style: none;color: rgb(255,255,255);" type="button" onclick="hob_rac_func()">RACING</button></div><!-- End: Hobby Selection Buttons -->
+            <h1 style="text-align: center;">What's your favorite color?</h1><input class="form-control form-control-color" type="color" style="border-style: none;background: linear-gradient(171deg, rgba(255,255,255,0.07), rgba(207,207,207,0.22) 100%), rgba(255,255,255,0.2);width: 50px;height: 50px;"><!-- Start: line -->
+            <div style="height: 1px;width: 50%;margin-top: 25px;background: #ffffff;"></div><!-- End: line --><button class="btn btn-primary" id="submit" type="button" style="margin-top: 25px;background: linear-gradient(171deg, rgba(255,255,255,0.07), rgba(207,207,207,0.22) 100%), rgba(255,255,255,0.2);border-style: none;font-size: calc(2rem + 2vw);font-weight: bold;font-family: Inter, sans-serif;padding-top: 5px;padding-bottom: 5px;padding-right: 24px;padding-left: 24px;" onclick="submit">SUBMIT</button>
         </form>
     </div>
-    <div class="d-flex d-md-flex flex-column justify-content-start align-items-center" style="width: 100vw;height: 100vh;color: rgb(255,255,255);font-family: 'Sandro Grottesco';padding: 20px;padding-top: 50px;padding-bottom: 50px;">
-        <h1 style="font-weight: bold;">RECO'S</h1>
-        <p id="response_text" style="font-family: Inter, sans-serif;font-weight: 200;font-size: 20px;max-width: 80%;">&nbsp;</p>
+    <div class="d-flex d-md-flex flex-column justify-content-start align-items-center" style="width: 100vw;color: rgb(255,255,255);font-family: 'Sandro Grottesco';padding: 20px;padding-top: 50px;padding-bottom: 50px;background: url(&quot;/assets/img/4.png&quot;) top left / cover no-repeat;min-height: 100vh\;">
+        <h1 id="reco-header" style="font-weight: bold;margin-bottom: 20px;">RECO'S</h1><!-- Start: Card 1 -->
+        <div class="d-flex flex-column justify-content-start align-items-center" style="width: 90%;background: linear-gradient(171deg, rgba(255,255,255,0.07), rgba(207,207,207,0.22) 100%), rgba(255,255,255,0.2);border-radius: 20px;color: rgb(255,255,255);font-family: 'Gin &amp; Js';font-size: 20px;min-height: 70%;padding-top: 20px;padding-bottom: 20px;padding-right: 5px;padding-left: 5px;margin-bottom: 20px;height: auto;">
+            <h1 style="font-weight: bold;">CLUB 1</h1>
+            <p id="response1" style="font-family: Inter, sans-serif;font-weight: 200;font-size: 20px;max-width: 80%;margin-bottom: 20px;">&nbsp;</p>
+        </div><!-- End: Card 1 -->
+        <!-- Start: Card 2 -->
+        <div class="d-flex flex-column justify-content-start align-items-center" style="width: 90%;background: linear-gradient(171deg, rgba(255,255,255,0.07), rgba(207,207,207,0.22) 100%), rgba(255,255,255,0.2);border-radius: 20px;color: rgb(255,255,255);font-family: 'Gin &amp; Js';font-size: 20px;min-height: 70%;padding-top: 20px;padding-bottom: 20px;padding-right: 5px;padding-left: 5px;margin-bottom: 20px;height: auto;">
+            <h1 style="font-weight: bold;">CLUB 2</h1>
+            <p id="response2" style="font-family: Inter, sans-serif;font-weight: 200;font-size: 20px;max-width: 80%;margin-bottom: 20px;">&nbsp;</p>
+        </div><!-- End: Card 2 -->
+        <!-- Start: Card 3 -->
+        <div class="d-flex flex-column justify-content-start align-items-center" style="width: 90%;background: linear-gradient(171deg, rgba(255,255,255,0.07), rgba(207,207,207,0.22) 100%), rgba(255,255,255,0.2);border-radius: 20px;color: rgb(255,255,255);font-family: 'Gin &amp; Js';font-size: 20px;min-height: 70%;padding-top: 20px;padding-bottom: 20px;padding-right: 5px;padding-left: 5px;margin-bottom: 20px;height: auto;">
+            <h1 style="font-weight: bold;">CLUB 3</h1>
+            <p id="response3" style="font-family: Inter, sans-serif;font-weight: 200;font-size: 20px;max-width: 80%;margin-bottom: 20px;">&nbsp;</p>
+        </div><!-- End: Card 3 -->
     </div><script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 
 <script>
 
-    prompt = "";
+    var college_prompt = "";
+    var hobby1_prompt = "";
+    var hobby2_prompt = "";
 
     function resetButtons(){
         //modify the css of buttons with id 1 through 12
@@ -57,84 +73,84 @@
     function col_ist_func() {
         resetButtons()
         document.getElementById(1).style.backgroundColor = "blue";
-        prompt = "Interested in technology, "
+        college_prompt = "Interested in technology, "
         console.log("col_art clicked; college of IST selected");
     }
 
     function col_eng_func() {
         resetButtons()
         document.getElementById(2).style.backgroundColor = "blue";
-        prompt = "Interested in engineering, "
+        college_prompt = "Interested in engineering, "
         console.log("col_eng clicked; college of engineering selected");
     }
 
     function col_bus_func() {
         resetButtons()
         document.getElementById(3).style.backgroundColor = "blue";
-        prompt = "Interested in business, "
+        college_prompt = "Interested in business, "
         console.log("col_art clicked; college of business selected");
     }
 
     function col_ags_func() {
         resetButtons()
         document.getElementById(4).style.backgroundColor = "blue";
-        prompt = "Interested in agriculture, "
+        college_prompt = "Interested in agriculture, "
         console.log("col_art clicked; college of AGSCI selected");
     }
 
     function col_aa_func() {
         resetButtons()
         document.getElementById(5).style.backgroundColor = "blue";
-        prompt = "Interested in architecture, "
+        college_prompt = "Interested in architecture, "
         console.log("col_art clicked; college of Arts & Achitecture selected");
     }
 
     function col_edu_func() {
         resetButtons()
         document.getElementById(6).style.backgroundColor = "blue";
-        prompt = "Interested in education, "
+        college_prompt = "Interested in education, "
         console.log("col_art clicked; college of education selected");
     }
 
     function col_hdd_func() {
         resetButtons()
         document.getElementById(7).style.backgroundColor = "blue";
-        prompt = "Interested in human-centered design and graphic design, "
+        college_prompt = "Interested in human-centered design and graphic design, "
         console.log("col_art clicked; college of HDD selected");
     }
 
     function col_com_func() {
         resetButtons()
         document.getElementById(8).style.backgroundColor = "blue";
-        prompt = "Interested in communications, "
+        college_prompt = "Interested in communications, "
         console.log("col_art clicked; college of communications selected");
     }
 
     function col_ems_func() {
         resetButtons()
         document.getElementById(9).style.backgroundColor = "blue";
-        prompt = "Interested in technology, "
+        college_prompt = "Interested in technology, "
         console.log("col_art clicked; college of IST selected");
     }
 
     function col_lib_func() {
         resetButtons()
         document.getElementById(10).style.backgroundColor = "blue";
-        prompt = "Interested in liberal arts, "
+        college_prompt = "Interested in liberal arts, "
         console.log("col_art clicked; college of liberal arts selected");
     }
 
     function col_nur_func() {
         resetButtons()
         document.getElementById(11).style.backgroundColor = "blue";
-        prompt = "Interested in nursing, "
+        college_prompt = "Interested in nursing, "
         console.log("col_art clicked; college of nursing selected");
     }
 
     function col_sci_func() {
         resetButtons()
         document.getElementById(12).style.backgroundColor = "blue";
-        prompt = "Interested in science, "
+        college_prompt = "Interested in science, "
         console.log("col_art clicked; college of science selected");
     }
 
@@ -155,122 +171,134 @@
     function hob_inv_func() {
         if (b13 ==false){
             document.getElementById(13).style.backgroundColor = "blue";
+            b13 = true;
         }else{
             document.getElementById(13).style.background = "linear-gradient(171deg, rgba(255,255,255,0.07), rgba(207,207,207,0.22) 100%), rgba(255,255,255,0.2)";
+            b13 = false;
         }
         
-        prompt += "and interested in investing, "
         console.log("col_art clicked; college of science selected");
     }
 
     function hob_cod_func() {
         if (b14 ==false){
             document.getElementById(14).style.backgroundColor = "blue";
+            b14 = true;
         }else{
             document.getElementById(14).style.background = "linear-gradient(171deg, rgba(255,255,255,0.07), rgba(207,207,207,0.22) 100%), rgba(255,255,255,0.2)";
+            b14 = false;
         }
-        prompt += "and interested in coding, "
-        console.log("col_art clicked; college of science selected");
+        console.log("hob_code clicked; interested in coding selected");
     }
 
     function hob_mus_func() {
         if (b15 ==false){
             document.getElementById(15).style.backgroundColor = "blue";
+            b15 = true;
         }else{
             document.getElementById(15).style.background = "linear-gradient(171deg, rgba(255,255,255,0.07), rgba(207,207,207,0.22) 100%), rgba(255,255,255,0.2)";
+            b15 = false;
         }
-        prompt += "and interested in music, "
-        console.log("col_art clicked; college of science selected");
+        console.log("hob_mus clicked; interested in music selected");
     }
 
     function hob_coo_func() {
         if (b16 ==false){
             document.getElementById(16).style.backgroundColor = "blue";
+            b16 = true;
         }else{
             document.getElementById(16).style.background = "linear-gradient(171deg, rgba(255,255,255,0.07), rgba(207,207,207,0.22) 100%), rgba(255,255,255,0.2)";
+            b16 = false;
         }
-        prompt += "and interested in cooking, "
-        console.log("col_art clicked; college of science selected");
+        console.log("hob_coo clicked; interested in cooking selected");
     }
 
     function hob_mov_func() {
         if (b17 ==false){
             document.getElementById(17).style.backgroundColor = "blue";
+            b17 = true;
         }else{
             document.getElementById(17).style.background = "linear-gradient(171deg, rgba(255,255,255,0.07), rgba(207,207,207,0.22) 100%), rgba(255,255,255,0.2)";
+            b17 = false;
         }
-        prompt += "and interested in movies, "
-        console.log("col_art clicked; college of science selected");
+        console.log("hob_mov clicked; interested in movies selected");
     }
 
     function hob_gam_func() {
         if (b18 ==false){
             document.getElementById(18).style.backgroundColor = "blue";
+            b18 = true;
         }else{
             document.getElementById(18).style.background = "linear-gradient(171deg, rgba(255,255,255,0.07), rgba(207,207,207,0.22) 100%), rgba(255,255,255,0.2)";
+            b18 = false;
         }
-        prompt += "and interested in gaming, "
-        console.log("col_art clicked; college of science selected");
+        console.log("hob_gam clicked; interested in gaming selected");
     }
 
     function hob_box_func() {
         if (b19 ==false){
             document.getElementById(19).style.backgroundColor = "blue";
+            b19 = true;
         }else{
             document.getElementById(19).style.background = "linear-gradient(171deg, rgba(255,255,255,0.07), rgba(207,207,207,0.22) 100%), rgba(255,255,255,0.2)";
+            b19 = false;
         }
-        prompt += "and interested in boxing, "
-        console.log("col_art clicked; college of science selected");
+        console.log("hob_box clicked; interested in boxing selected");
     }
 
     function hob_ten_func() {
         if (b20 ==false){
             document.getElementById(20).style.backgroundColor = "blue";
+            b20 = true;
         }else{
             document.getElementById(20).style.background = "linear-gradient(171deg, rgba(255,255,255,0.07), rgba(207,207,207,0.22) 100%), rgba(255,255,255,0.2)";
+            b20 = false;
         }
-        prompt += "and interested in tennis, "
-        console.log("col_art clicked; college of science selected");
+        console.log("hob_ten clicked; interested in tennis selected");
     }
 
     function hob_hik_func() {
         if (b21 ==false){
             document.getElementById(21).style.backgroundColor = "blue";
+            b21 = true;
         }else{
             document.getElementById(21).style.background = "linear-gradient(171deg, rgba(255,255,255,0.07), rgba(207,207,207,0.22) 100%), rgba(255,255,255,0.2)";
+            b21 = false;
         }
-        prompt += "and interested in hiking, "
-        console.log("col_art clicked; college of science selected");
+        console.log("hob_hik clicked; interested in hiking selected");
     }
 
     function hob_hoc_func() {
         if (b22 ==false){
             document.getElementById(22).style.backgroundColor = "blue";
+            b22 = true;
         }else{
             document.getElementById(22).style.background = "linear-gradient(171deg, rgba(255,255,255,0.07), rgba(207,207,207,0.22) 100%), rgba(255,255,255,0.2)";
+            b22 = false;
         }
-        prompt += "and interested in hockey, "
-        console.log("col_art clicked; college of science selected");
+        console.log("hob_hoc clicked; interested in hockey selected");
     }
 
     function hob_weg_func() {
-        if (b23 ==false){
+        if (b23 == false){
             document.getElementById(23).style.backgroundColor = "blue";
+            b23 = true;
         }else{
             document.getElementById(23).style.background = "linear-gradient(171deg, rgba(255,255,255,0.07), rgba(207,207,207,0.22) 100%), rgba(255,255,255,0.2)";
+            b23 = false;
         }
-        prompt += "and interested in weightlifting, "
-        console.log("col_art clicked; college of science selected");
+        console.log("hob_weg clicked; interested in weightlifting selected");
     }
     
     function hob_rac_func() {
-        if (b24 ==false){
+        if (b24 == false){
             document.getElementById(24).style.backgroundColor = "blue";
+            b24 = true;
         }else{
             document.getElementById(24).style.background = "linear-gradient(171deg, rgba(255,255,255,0.07), rgba(207,207,207,0.22) 100%), rgba(255,255,255,0.2)";
+            b24 = false;
         }
-        prompt += "and interested in racing, "
-        console.log("col_art clicked; college of science selected");
+        console.log("hob_rac clicked; interested in racing selected");
     }
 
 
@@ -298,29 +326,141 @@
         });
     }
 
-    function submit() {
-        console.log("submit clicked; form processing...");
-        document.getElementById("response_text").innerHTML = "Fetching....";
+    function generateClubs(display, localPrompt){
+        display.innerHTML = "analyzing interests....";
 
         //remove the last 2 characters of the prompt
-        prompt = prompt.substring(0, prompt.length - 2);
+        localPrompt = localPrompt.substring(0, localPrompt.length - 2);
 
         //URL encode the prompt variable
-        var encodedPrompt = encodeURIComponent(prompt);
+        var encodedPrompt = encodeURIComponent(localPrompt);
 
-        document.getElementById("response_text").innerHTML = "Constructing URL...";
+        display.innerHTML = "determining personality...";
         //create a variable that stores the URL to the API
-        const url = "https://api.gater.dev/complete/" + encodedPrompt;
+        const url = "https://api.gater.dev/club-generator/" + encodedPrompt;
         console.log(url);
 
-        document.getElementById("response_text").innerHTML = "Fetching data from URL...";
+        display.innerHTML = "searching for clubs...";
 
         (async() => {
             var result = await makeGetRequest(url);
             console.log(result.result);
-            document.getElementById("response_text").innerHTML = result.result;
+            display.innerHTML = result.result;
         })();
+    }
 
+
+    //select 2 random hobbies from the list of hobbies, but only if the corresponding boolean (b13, b14, 15, etc.) is true
+    function randomHobbies(){
+        console.log("selecting random hobbies...");
+
+        var hobbies = [];
+        if (b13 == true){
+            hobbies.push("and interested in investing, ");
+        }
+        if (b14 == true){
+            hobbies.push("and interested in coding, ");
+        }
+        if (b15 == true){
+            hobbies.push("and interested in music, ");
+        }
+        if (b16 == true){
+            hobbies.push("and interested in cooking, ");
+        }
+        if (b17 == true){
+            hobbies.push("and interested in movies, ");
+        }
+        if (b18 == true){
+            hobbies.push("and interested in gaming, ");
+        }
+        if (b19 == true){
+            hobbies.push("and interested in boxing, ");
+        }
+        if (b20 == true){
+            hobbies.push("and interested in tennis, ");
+        }
+        if (b21 == true){
+            hobbies.push("and interested in hiking, ");
+        }
+        if (b22 == true){
+            hobbies.push("and interested in hockey, ");
+        }
+        if (b23 == true){
+            hobbies.push("and interested in weightlifting, ");
+        }
+        if (b24 == true){
+            hobbies.push("and interested in racing, ");
+        }
+
+        if (hobbies.length > 0){
+            var randomHobby1 = hobbies[Math.floor(Math.random() * hobbies.length)];
+            hobby1_prompt = randomHobby1.replace("and ", "").replace(", ", "");
+            console.log(hobby1_prompt);
+
+
+            if (hobbies.length > 1){
+                var randomHobby2 = hobbies[Math.floor(Math.random() * hobbies.length)];
+                while (randomHobby2 == randomHobby1){
+                    randomHobby2 = hobbies[Math.floor(Math.random() * hobbies.length)];
+                }
+                hobby2_prompt = randomHobby2.replace("and ", "").replace(", ", "");
+                console.log(hobby2_prompt);
+            }//end if (hobbies.length > 1)
+            
+        }//end if (hobbies.length > 0)
+        
+    }//end randomHobbies()
+
+
+
+
+
+
+    function submit() {
+        console.log("submit clicked; form processing...");
+
+        var chosen1 = false;
+        var chosen2 = false;
+        var chosen3 = false;
+
+        let display1 = document.getElementById("response1");
+        let display2 = document.getElementById("response2");
+        let display3 = document.getElementById("response3");
+
+        randomHobbies();
+
+        if (college_prompt != "" && chosen1 == false){
+            chosen1 = true;
+            generateClubs(display1, college_prompt.replace(", ", ""));
+        }else if (hobby1_prompt != "" && chosen2 == false){
+            chosen2 = true;
+            generateClubs(display1, hobby1_prompt);
+        }else if (hobby2_prompt != "" && chosen3 == false){
+            chosen3 = true;
+            generateClubs(display1, hobby2_prompt);
+        }
+
+        if (college_prompt != "" && chosen1 == false){
+            chosen1 = true;
+            generateClubs(display2, college_prompt.replace(", ", ""));
+        }else if (hobby1_prompt != "" && chosen2 == false){
+            chosen2 = true;
+            generateClubs(display2, hobby1_prompt);
+        }else if (hobby2_prompt != "" && chosen3 == false){
+            chosen3 = true;
+            generateClubs(display2, hobby2_prompt);
+        }
+
+        if (college_prompt != "" && chosen1 == false){
+            chosen1 = true;
+            generateClubs(display3, college_prompt.replace(", ", ""));
+        }else if (hobby1_prompt != "" && chosen2 == false){
+            chosen2 = true;
+            generateClubs(display3, hobby1_prompt);
+        }else if (hobby2_prompt != "" && chosen3 == false){
+            chosen3 = true;
+            generateClubs(display3, hobby2_prompt);
+        }
     }
 
     //run the 'submit' function when the button with id 'submit' is clicked
