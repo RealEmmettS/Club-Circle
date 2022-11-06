@@ -426,10 +426,6 @@
     function submit() {
         console.log("submit clicked; form processing...");
 
-        display1.innerHTML = "";
-        display2.innerHTML = "";
-        display3.innerHTML = "";
-
         var chosen1 = false;
         var chosen2 = false;
         var chosen3 = false;
@@ -437,6 +433,10 @@
         let display1 = document.getElementById("response1");
         let display2 = document.getElementById("response2");
         let display3 = document.getElementById("response3");
+
+        display1.innerHTML = "";
+        display2.innerHTML = "";
+        display3.innerHTML = "";
 
         randomHobbies();
 
