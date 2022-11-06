@@ -33,17 +33,17 @@
     <div class="d-flex d-md-flex flex-column justify-content-start align-items-center" style="width: 100vw;color: rgb(255,255,255);font-family: 'Sandro Grottesco';padding: 20px;padding-top: 50px;padding-bottom: 50px;background: url(&quot;/assets/img/4.png&quot;) top left / cover no-repeat;min-height: 100vh\;">
         <h1 id="reco-header" style="font-weight: bold;margin-bottom: 20px;">RECO'S</h1><!-- Start: Card 1 -->
         <div class="d-flex flex-column justify-content-start align-items-center" style="width: 90%;background: linear-gradient(171deg, rgba(255,255,255,0.07), rgba(207,207,207,0.22) 100%), rgba(255,255,255,0.2);border-radius: 20px;color: rgb(255,255,255);font-family: 'Gin &amp; Js';font-size: 20px;min-height: 70%;padding-top: 20px;padding-bottom: 20px;padding-right: 5px;padding-left: 5px;margin-bottom: 20px;height: auto;">
-            <h1 style="font-weight: bold;">CLUB 1</h1>
+            <h1 style="font-weight: bold;">CLUB 1</h1><img id="logo1" style="display:none; width: 128px;height: 128px;border-radius: 10px;border: 1px solid rgb(255,255,255);">
             <p id="response1" style="font-family: Inter, sans-serif;font-weight: 200;font-size: 20px;max-width: 80%;margin-bottom: 20px;">&nbsp;</p>
         </div><!-- End: Card 1 -->
         <!-- Start: Card 2 -->
         <div class="d-flex flex-column justify-content-start align-items-center" style="width: 90%;background: linear-gradient(171deg, rgba(255,255,255,0.07), rgba(207,207,207,0.22) 100%), rgba(255,255,255,0.2);border-radius: 20px;color: rgb(255,255,255);font-family: 'Gin &amp; Js';font-size: 20px;min-height: 70%;padding-top: 20px;padding-bottom: 20px;padding-right: 5px;padding-left: 5px;margin-bottom: 20px;height: auto;">
-            <h1 style="font-weight: bold;">CLUB 2</h1>
+            <h1 style="font-weight: bold;">CLUB 2</h1><img id="logo2" style="display:none; width: 128px;height: 128px;border-radius: 10px;border: 1px solid rgb(255,255,255);">
             <p id="response2" style="font-family: Inter, sans-serif;font-weight: 200;font-size: 20px;max-width: 80%;margin-bottom: 20px;">&nbsp;</p>
         </div><!-- End: Card 2 -->
         <!-- Start: Card 3 -->
         <div class="d-flex flex-column justify-content-start align-items-center" style="width: 90%;background: linear-gradient(171deg, rgba(255,255,255,0.07), rgba(207,207,207,0.22) 100%), rgba(255,255,255,0.2);border-radius: 20px;color: rgb(255,255,255);font-family: 'Gin &amp; Js';font-size: 20px;min-height: 70%;padding-top: 20px;padding-bottom: 20px;padding-right: 5px;padding-left: 5px;margin-bottom: 20px;height: auto;">
-            <h1 style="font-weight: bold;">CLUB 3</h1>
+            <h1 style="font-weight: bold;">CLUB 3</h1><img id="logo3" style="display:none; width: 128px;height: 128px;border-radius: 10px;border: 1px solid rgb(255,255,255);">
             <p id="response3" style="font-family: Inter, sans-serif;font-weight: 200;font-size: 20px;max-width: 80%;margin-bottom: 20px;">&nbsp;</p>
         </div><!-- End: Card 3 -->
     </div><!-- End: responses --><script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
@@ -184,7 +184,7 @@
             b13 = false;
         }
         
-        console.log("col_art clicked; college of science selected");
+        console.log("hob_inv clicked; interested in investments selected");
     }
 
     function hob_cod_func() {
@@ -324,6 +324,7 @@
                 (response) => {
                     var result = response.data;
                     console.log('Processing Request');
+                    sleep(1000);
                     resolve(result);
                 },
                     (error) => {
@@ -333,7 +334,7 @@
         });
     }
 
-    function generateClubs(display, localPrompt){
+    function generateClubs(display, image, localPrompt){
         display.innerHTML = "analyzing interests....";
 
         //remove the last 2 characters of the prompt
@@ -351,8 +352,30 @@
 
         (async() => {
             var result = await makeGetRequest(url);
+            sleep(1500);
             console.log(result.result);
             display.innerHTML = result.result;
+
+            sleep(3000);
+            let clubName = result.result.substring(0, result.result.indexOf(":")).replace("!", "");
+            console.log(clubName);
+            console.log(image)
+            generateClubLogo(image, clubName);
+        })();
+    }
+
+    function generateClubLogo(image, clubName){
+        var encodedPrompt = encodeURIComponent(clubName);
+        console.log(encodedPrompt);
+        const url = "https://api.gater.dev/club-logo-generator/" + encodedPrompt;
+        console.log(url);
+
+        (async() => {
+            var result = await makeGetRequest(url);
+            console.log(result.result);
+            sleep(2000);
+            image.src = result.result;
+            toggleAllImages();
         })();
     }
 
@@ -363,7 +386,7 @@
 
         var hobbies = [];
         if (b13 == true){
-            hobbies.push("and interested in investing, ");
+            hobbies.push("and interested in investing in stocks, ");
         }
         if (b14 == true){
             hobbies.push("and interested in coding, ");
@@ -430,52 +453,89 @@
         var chosen2 = false;
         var chosen3 = false;
 
-        let display1 = document.getElementById("response1");
-        let display2 = document.getElementById("response2");
-        let display3 = document.getElementById("response3");
+        const display1 = document.getElementById("response1");
+        const display2 = document.getElementById("response2");
+        const display3 = document.getElementById("response3");
+
+        const image1 = document.getElementById("logo1");
+        const image2 = document.getElementById("logo2");
+        const image3 = document.getElementById("logo3");
 
         display1.innerHTML = "";
         display2.innerHTML = "";
         display3.innerHTML = "";
 
+        image1.src = "";
+        image2.src = "";
+        image3.src = "";
+
+        toggleAllImages();
+
+        var clubName = "";
+
         randomHobbies();
 
-        if (college_prompt != "" && chosen1 == false){
+        if (college_prompt != "" && chosen1 == false && display1.innerHTML == ""){
             chosen1 = true;
-            generateClubs(display1, college_prompt.replace(", ", "").replace("\"", ""));    
-        }else if (hobby1_prompt != "" && chosen2 == false){
+            generateClubs(display1, image1, college_prompt.replace(", ", "").replace("\"", ""));  
+        }else if (hobby1_prompt != "" && chosen2 == false && display1.innerHTML == ""){
             chosen2 = true;
-            generateClubs(display1, hobby1_prompt);
-        }else if (hobby2_prompt != "" && chosen3 == false){
+            generateClubs(display1, image1, hobby1_prompt);
+        }else if (hobby2_prompt != "" && chosen3 == false && display1.innerHTML == ""){
             chosen3 = true;
-            generateClubs(display1, hobby2_prompt);
+            generateClubs(display1, image1, hobby2_prompt);
         }
 
-        if (college_prompt != "" && chosen1 == false){
+        if (college_prompt != "" && chosen1 == false && display2.innerHTML == ""){
             chosen1 = true;
-            generateClubs(display2, college_prompt.replace(", ", "").replace("\"", ""));
-        }else if (hobby1_prompt != "" && chosen2 == false){
+            generateClubs(display2, image2, college_prompt.replace(", ", "").replace("\"", ""));
+        }else if (hobby1_prompt != "" && chosen2 == false && display2.innerHTML == ""){
             chosen2 = true;
-            generateClubs(display2, hobby1_prompt);
-        }else if (hobby2_prompt != "" && chosen3 == false){
+            generateClubs(display2, image2, hobby1_prompt);
+        }else if (hobby2_prompt != "" && chosen3 == false && display2.innerHTML == ""){
             chosen3 = true;
-            generateClubs(display2, hobby2_prompt);
+            generateClubs(display2, image2, hobby2_prompt);
         }
 
-        if (college_prompt != "" && chosen1 == false){
+        if (college_prompt != "" && chosen1 == false && display3.innerHTML == ""){
             chosen1 = true;
-            generateClubs(display3, college_prompt.replace(", ", "").replace("\"", ""));
-        }else if (hobby1_prompt != "" && chosen2 == false){
+            generateClubs(display3, image3, college_prompt.replace(", ", "").replace("\"", ""));
+        }else if (hobby1_prompt != "" && chosen2 == false && display3.innerHTML == ""){
             chosen2 = true;
-            generateClubs(display3, hobby1_prompt);
-        }else if (hobby2_prompt != "" && chosen3 == false){
+            generateClubs(display3, image3, hobby1_prompt);
+        }else if (hobby2_prompt != "" && chosen3 == false && display3.innerHTML == ""){
             chosen3 = true;
-            generateClubs(display3, hobby2_prompt);
+            generateClubs(display3, image3, hobby2_prompt);
+        }
+
+        toggleAllImages();
+    }
+
+    //hide image1, image2, and image3 if the source is empty
+    function toggleImage(image, display){
+        if (image.src == "" || display.innerHTML == ""){
+            image.style.display = "none";
+        }else{
+            image.style.display = "block";
         }
     }
 
-    //run the 'submit' function when the button with id 'submit' is clicked
+    function toggleAllImages(){
+        toggleImage(document.getElementById("logo1"), document.getElementById("response1"));
+        toggleImage(document.getElementById("logo2"), document.getElementById("response2"));
+        toggleImage(document.getElementById("logo3"), document.getElementById("response3"));
+    }
+
     document.getElementById("submit").addEventListener("click", submit);
+
+    function getClubName(full_prompt){
+        if (full_prompt != ""){
+            return full_prompt.substring(0, full_prompt.indexOf(":")).replace("\"", "");
+        }else{
+            return "The Standard Club";
+        }
+    
+    }
 
 </script><!-- Start: Footer Dark -->
     <footer class="text-center bg-dark" style="background: black;width: 100vw;height: fit-content;max-height: 30%;">
