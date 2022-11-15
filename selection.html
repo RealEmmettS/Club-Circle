@@ -448,12 +448,16 @@
     }//end randomHobbies()
 
 
-
+    function pageScroll() {
+        window.scrollBy(0,20000); // horizontal and vertical scroll increments
+        //scrolldelay = setTimeout('pageScroll()',100); // scrolls every 100 milliseconds
+} 
 
 
 
     function submit() {
         console.log("submit clicked; form processing...");
+        pageScroll();
 
         var chosen1 = false;
         var chosen2 = false;
